@@ -1,0 +1,133 @@
+{% load static %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    {% block title %}
+    Absence Details
+    {% endblock %}
+</title>
+<link rel="stylesheet" href="{% static 'css/navigation/download_course_plan.css' %}">
+
+{%  include 'navbar.html' %}
+{% block content %}
+<!-- <div class="logo">
+    <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+</div> -->
+
+<div class="main_body">
+    <div class="lg">
+        <img src="{% static 'images/logo.png' %}" alt="">
+    </div>
+    <hr>
+    <div class="atten">
+        <span><img src="{% static 'images/calendar.png' %}" alt=""></span> Absence Details
+    </div>
+    <div class="table_container">
+        <table>
+            <tr>
+                <th>
+                    <div class="t_h">
+                        Date
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Day
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Period
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Subject Code
+                    </div>
+                </th>
+            </tr>
+
+            {% for ab_d in absen_details %}
+            <tr>
+                <td>
+                    <div class="subs_date">
+                        {{ab_d.date}}
+                    </div>
+                </td>
+                <td>
+                    <div class="subs">
+                        {{ab_d.day}}
+                    </div>
+                </td>
+                <td>
+                    <div class="subs">
+                        {{ab_d.which_period}}
+                    </div>
+                </td>
+
+                <td>
+                    <div class="subs">
+                        {{ab_d.sub.sub_code}}
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            
+        </table>
+
+        
+    </div>
+<hr>
+<hr>
+    <div class="another_table">
+        <table>
+            <tr>
+                <th>
+                    <div class="t_h">
+                        Subjects
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Total Number of Period's Absent
+                    </div>
+                </th>
+            </tr>
+
+            {% for n_o_p_a_s in n_o_p_a %}
+            <tr>
+                
+                <td>
+                    <div class="subs_date">
+                        {{n_o_p_a_s.sub.sub_name}}
+                    </div>
+                </td>
+
+                <td>
+                    <div class="subs">
+                        {{n_o_p_a_s.number_of_periods_absent}}
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>
+                    <div class="subs_date">
+                        Total Periods Absent: 
+                    </div>
+                </td>
+                <td>
+                    <div class="subs">
+                        {{total_periods}}
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="footer">
+    &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+</div>
+{% endblock %}

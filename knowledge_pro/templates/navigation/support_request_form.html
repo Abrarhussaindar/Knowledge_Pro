@@ -1,0 +1,52 @@
+{% load static %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  {% block title %}
+  support
+  {% endblock %}
+</title>
+<link rel="stylesheet" href="{% static 'css/navigation/support_request_form.css' %}">
+
+{% include 'navbar.html' %}
+{% block content %}
+<div class="main_body">
+  <div class="lg">
+    <img src="{% static 'images/logo.png' %}" alt="">
+  </div>
+  <hr>
+  <div class="atten">
+    <span><img src="{% static 'images/customer-support.png' %}" alt=""></span> Support Request Form
+  </div>
+
+  <hr>
+  <div class="category">
+    Please select a category and enter the problem description in 150 characters
+  </div>
+
+  <div class="body_container">
+
+    <div class="content">
+      <form method="POST">
+        {% csrf_token %}
+        <div class="user-details">
+          <div class="input-box">
+            {% for field in form %}
+            <span class="details">{{ field.label }}</span>
+            {{ field }}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
+<div class="footer">
+  &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+</div>
+{% endblock %}

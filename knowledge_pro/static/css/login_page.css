@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+:root {
+  --bg: #258bf1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url(./presi.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+body .kpro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+  margin-left: 2.5em;
+}
+
+body .container {
+  border-radius: 15px;
+  height: 55vh;
+  width: 50vh;
+  margin-left: 5em;
+  margin-top: 1em;
+  background: white;
+}
+
+body .container .logo img {
+  border-radius: 5px;
+  margin: .5em 2.5em;
+  width: 40vh;
+  height: 10vh;
+}
+
+body .container .uni {
+  margin-top: -1em;
+  margin-left: 3.3em;
+  margin-right: 2em;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+}
+
+body .container .stu {
+  font-size: 1.2em;
+  margin-top: -.01em;
+  margin-left: -.01em;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: .5em;
+  width: 47.4vh;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+body .container .wrapper {
+  background: #fff;
+  border-radius: 15px;
+  height: 35vh;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+body .container .wrapper form {
+  padding: 10px 30px 50px 30px;
+}
+
+body .container .wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+body .container .wrapper form .field input {
+  height: 100%;
+  width: 90%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .container .wrapper form .field input:focus,
+body .container form .field input:valid {
+  border-color: #4158d0;
+}
+
+body .container .wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .container form .field input:focus ~ label,
+body .container form .field input:valid ~ label {
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .container form .field input[type="submit"] {
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .container form .field input[type="submit"]:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+body .footer {
+  margin-top: 5em;
+  margin-left: -8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: lighter;
+  color: black;
+}
+
+body .footer span {
+  font-weight: 400;
+  color: black;
+}
+/*# sourceMappingURL=login_page.css.map */

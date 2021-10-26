@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root{
+    --bg: #258bf1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    // background-color: red;
+}
+
+.main{
+
+    border-radius: 10px;
+    // border: 2px solid black;
+    margin: .5em;
+    margin-top: 4.3em;
+    height: 85vh;
+
+    .logo{
+        img{
+            margin: 1em 3em;
+            width: 50vh;
+        }
+    }
+
+    .profile{
+        border-radius: 10px;
+        margin: .5em;
+        height: 25vh;
+        display: flex;
+        // border: 2px solid black;
+        .img{
+            // background-color: var(--bg);
+            // border: 2px solid black;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 5px;
+            width: 20vh;
+            height: 20vh;
+            cursor: pointer;
+            // position: absolute;
+
+
+            img{
+                width: 20vh;
+                height: 20vh;
+                border-radius: 50%;
+            }
+        }
+        .details{
+            border: 1px solid rgb(104, 102, 102);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+            margin-left: 1em;
+            top: 1px;
+            height: 20vh;
+
+            table{
+                td{
+                    font-weight: lighter;
+                    .stu_details{
+                        font-size: 12.5px;
+                        font-weight: 500;
+                    }
+                }
+                section{
+                    color: rgb(104, 102, 102);
+                    font-size: 10px;
+                    font-weight: lighter;
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .attendance_details{
+        border: 1px solid rgb(104, 102, 102);
+        border-radius: 10px;
+        margin: .5em;
+        padding: 1em;
+        height: 35vh;
+        font-weight: lighter    ;
+
+        span{
+            .chart{
+                margin-right: .1em;
+                width: 2vh;
+                height: 2vh;
+            }
+        }
+
+        .grah{
+            margin: 1em 5em;
+            width: 30vh;
+            height: 30vh;
+        }
+
+    }
+}
+
+.footer{
+    // background-color: chartreuse;
+    border-radius: 10px;
+    // border: 2px solid black;
+    margin: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+
+    span{
+        font-weight: 400;
+        color: #000000;
+    }
+
+}
