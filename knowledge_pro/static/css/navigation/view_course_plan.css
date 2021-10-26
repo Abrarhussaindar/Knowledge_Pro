@@ -179,4 +179,38 @@
   font-weight: 400;
   color: #000000;
 }
+
+@media only screen and (min-width: 720px) {
+  .main_body {
+    width: 98.5%;
+    height: 85vh;
+  }
+  .main_body .lg {
+    margin: -.1em;
+  }
+  .main_body .lg img {
+    margin-top: .2em;
+    margin-left: 33em;
+    width: 50vh;
+    height: 10vh;
+  }
+  .main_body .atten {
+    margin: 1em 25em;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  .main_body .atten span img {
+    vertical-align: -2px;
+    width: 3vh;
+    height: 3vh;
+  }
+  .main_body .table_container {
+    border-radius: 10px;
+    margin-left: 25em;
+    width: 80vh;
+    height: 75%;
+    padding: .5em;
+    overflow: auto;
+  }
+}
 /*# sourceMappingURL=view_course_plan.css.map */

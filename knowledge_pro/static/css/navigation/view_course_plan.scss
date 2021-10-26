@@ -147,3 +147,52 @@
     }
 
 }
+
+@media only screen and (min-width: 720px ){
+    .main_body{
+        width: 98.5%;
+        height: 85vh;
+
+
+        .lg{
+            margin: -.1em;
+            // border: 1px solid black;
+    
+            img{
+                margin-top: .2em;
+                margin-left: 33em;
+                width: 50vh;
+                height: 10vh;
+            }
+        }
+
+        .atten{
+            span{
+                // border: 1px solid black;
+                img{
+                    vertical-align: -2px;
+                    width: 3vh;
+                    height: 3vh;
+                }
+            }
+            margin: 1em 25em;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        .table_container{
+            // border: 1px solid black;
+            border-radius: 10px;
+            margin-left: 25em;
+            width: 80vh;
+            height: 75%;
+            padding: .5em;
+            overflow: auto;
+            // display: inline-grid;
+            // grid-template-columns: auto auto;
+            // justify-content: space-between;
+        }
+
+        
+    
+    }
+}
