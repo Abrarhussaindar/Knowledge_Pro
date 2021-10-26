@@ -40,7 +40,7 @@ ul {
     }
 
     // .user_details{
-    //     // display: none;
+    //     display: none;
     // }
     nav.menu-btn {
         display: block;
@@ -94,9 +94,9 @@ ul {
         top: 0;
         // margin-top: -2em;
         background: white;
-        height: 100vh;
+        height: 120vh;
         // padding: 1em;
-        overflow: hidden;
+        // overflow: hidden;
         border: 1px solid black;
         border-radius: 10px;
 
@@ -108,15 +108,160 @@ ul {
             // border: 1px solid black;
         }
 
-        // .table{
-        //     box-sizing: border-box;
-        //     // display: inline-block;
-        //     margin-top: 5em;
-        //     margin-left: 2em;
-        //     display: block;
-        //     position: relative;
-        //     overflow: hidden;
-        // }
+        .table_container{
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: .5em;
+            // width: 90vh;
+            height: 75vh;
+            padding: .5em;
+            overflow: auto;
+            // display: inline-grid;
+            // grid-template-columns: auto auto;
+            // justify-content: space-between;
+    
+    
+            table{
+                margin: -.2em;
+                // padding: -5em;
+                border: 1px solid black;
+                border-radius: 10px;
+                // border-top: 5px solid black;
+                tr{
+                    // border: 1px solid black;
+    
+                    th{
+                        font-size: 15px;
+                        font-weight: 700;
+                        // margin-top: 1em;
+                        border: 1px solid black;
+                        padding: .2em;
+                        border-radius: 10px;
+    
+    
+                        .t_h{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            // font-size: 5em;
+                        }
+                    }
+                    td{
+                        height: 6vh;
+                        // font-size: 20px;
+                        border: 1px solid rgb(129, 122, 122);
+                        border-radius: 10px;
+                        .r1{
+                            // display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            font-size: 13px;
+                            font-weight: lighter;
+                            margin: 1em;
+                        }
+    
+                        .stu_details{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 15px;
+                            font-weight: 600;
+                            margin: .5em;
+                            
+                        }
+                        .subs_date{
+                            margin: 1em;
+                            // font-size: 13px;
+                            font-weight: 500;
+                        }
+    
+                        .type{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+    
+                        .conducted{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+    
+                        .present{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+    
+                        .t_h_a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+    
+                        .per{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            // .another_table{
+            //     margin-top: 2em;
+    
+            //     table{
+            //         tr{
+            //             td{
+                            
+            //                 .b_t_p{
+            //                     font-weight: 600;
+            //                     margin: 1em;
+            //                     font-size: 12px;
+            //                 }
+    
+            //                 input{
+            //                     font-weight: 500;
+            //                     border-radius: 8px;
+            //                 }
+    
+            //                 .v_d_btn{
+            //                     margin: 1em;
+            //                     // display: flex;
+            //                     button{
+            //                         // padding: 2px 20px;
+            //                         border-radius: 6px;
+            //                         color: #fff;
+            //                         background-color: #5cb85c;
+            //                         border-color: #4cae4c;
+    
+    
+            //                         display: inline-block;
+            //                         padding: 6px 12px;
+            //                         margin-bottom: 0;
+            //                         font-size: 14px;
+            //                         font-weight: 400;
+            //                         line-height: 1.42857143;
+            //                         text-align: center;
+            //                         white-space: nowrap;
+            //                         vertical-align: middle;
+    
+            //                         &:hover{
+            //                             background-color: #368636;
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
+    
+    
+        }
         .butt {
             // border: 5px solid black;
             margin-top: -8em;

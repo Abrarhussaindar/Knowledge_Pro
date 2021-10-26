@@ -119,6 +119,18 @@ def time_table(request):
     }
     return render(request, 'navigation/time_table.html', context)
 
+def navbar(request):
+    context1 = common_code(request)
+    # student = request.user
+    # stu = Student.objects.filter(roll_number=student)
+    # print('stu',stu)
+    context = {
+        # 'stu': stu,
+        'context1': context1,
+    }
+    return render(request, 'navbar.html', context)
+
+
 def result(request):
     context1 = common_code(request)
     context = {
