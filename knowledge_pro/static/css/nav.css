@@ -37,10 +37,6 @@ ul {
   display: none;
 }
 
-.container .user_details {
-  display: none;
-}
-
 .container nav.menu-btn {
   display: block;
 }
@@ -100,19 +96,28 @@ ul {
   color: black;
 }
 
-.container .user_details .btn {
+.container .user_details .butt {
+  margin-top: -8em;
+  margin-left: 16em;
+}
+
+.container .user_details .butt .btn {
   border: none;
   padding: 1em;
-  margin-top: .6em;
-  margin-left: 18em;
+  margin-top: 10em;
   background-color: #258bf1;
   border-radius: 10px;
   color: white;
   cursor: pointer;
 }
 
-.container .user_details .btn:hover {
+.container .user_details .butt .btn:hover {
   background-color: #187fe7;
+}
+
+.container .user_details .stu_de {
+  margin: 1em;
+  font-weight: 500;
 }
 
 .container .navigation {

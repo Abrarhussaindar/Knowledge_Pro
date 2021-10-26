@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-:root{
+:root {
     --bg: #258bf1;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     // background-color: red;
 }
-ul{
+
+ul {
     list-style-type: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
-.container{
+
+.container {
     background-color: var(--bg);
     position: fixed;
     top: 0;
@@ -28,21 +31,22 @@ ul{
     border-radius: 10px;
     // border: 2px solid black;
 
-    .navigation{
+    .navigation {
         display: none;
     }
 
-    .notify{
+    .notify {
         display: none;
     }
-    .user_details{
-        display: none;
-    }
-    nav.menu-btn{
+
+    // .user_details{
+    //     // display: none;
+    // }
+    nav.menu-btn {
         display: block;
     }
-    
-    .notify{
+
+    .notify {
         position: fixed;
         z-index: 999;
         width: 50%;
@@ -54,24 +58,26 @@ ul{
         border: 1px solid black;
         border-radius: 10px;
 
-        .no{
+        .no {
             margin: 1em;
         }
-        .user-menu-exit{
+
+        .user-menu-exit {
             float: right;
             margin: 1em;
             width: 20px;
             cursor: pointer;
             color: black;
         }
-        ul{
-            li{
-                a{
+
+        ul {
+            li {
+                a {
                     color: black;
                     margin: 1em 2em;
                     font-weight: 400;
 
-                    &:hover{
+                    &:hover {
                         font-weight: bold;
                     }
                 }
@@ -79,7 +85,8 @@ ul{
         }
 
     }
-    .user_details{
+
+    .user_details {
         position: fixed;
         z-index: 999;
         width: 80%;
@@ -93,11 +100,12 @@ ul{
         border: 1px solid black;
         border-radius: 10px;
 
-        .user-menu-exit{
+        .user-menu-exit {
             float: left;
             margin: 1em;
             cursor: pointer;
             color: black;
+            // border: 1px solid black;
         }
 
         // .table{
@@ -109,27 +117,40 @@ ul{
         //     position: relative;
         //     overflow: hidden;
         // }
+        .butt {
+            // border: 5px solid black;
+            margin-top: -8em;
+            margin-left: 16em;
 
-        .btn{
-            border: none;
-            padding: 1em;
-            margin-top: .6em;
-            margin-left: 18em;
-            background-color: #258bf1;
-            border-radius: 10px;
-            color: white;
-            // font-weight: bold;
-            cursor: pointer;
-            // font-size: 1em;
+            .btn {
+                border: none;
+                padding: 1em;
+                margin-top: 10em;
+                // margin-left: 18em;
+                background-color: #258bf1;
+                border-radius: 10px;
+                color: white;
+                // font-weight: bold;
+                cursor: pointer;
+                // font-size: 1em;
 
-            &:hover{
-                // font-size: 1.2em;
-                background-color: #187fe7;
+                &:hover {
+                    // font-size: 1.2em;
+                    background-color: #187fe7;
+                }
+
             }
+
+
+        }
+
+        .stu_de {
+            margin: 1em;
+            font-weight: 500;
         }
     }
 
-    .navigation{
+    .navigation {
         position: fixed;
         z-index: 999;
         width: 70%;
@@ -141,22 +162,24 @@ ul{
         // padding: 1em;
         border: 1px solid black;
         border-radius: 10px;
- 
-        .navi-menu-exit{
+
+        .navi-menu-exit {
             float: right;
             margin: 1em;
             cursor: pointer;
             color: black;
             // border: 5px solid black;
         }
-        .logo{
+
+        .logo {
             border: 1px solid black;
             margin-left: 5px;
             width: 45vh;
             margin-top: -.5em;
-           
+
         }
-        .list{
+
+        .list {
             box-sizing: border-box;
             // display: inline-block;
             margin-top: .5em;
@@ -164,7 +187,7 @@ ul{
             position: relative;
             overflow: hidden;
 
-            .icon{
+            .icon {
                 // font-family: 'Material Icons';
                 // font-weight: normal;
                 // font-style: normal;
@@ -180,7 +203,8 @@ ul{
                 vertical-align: -18px;
                 // color: white;
             }
-            img{
+
+            img {
                 width: 3vh;
                 // border: 2px solid black;
                 // margin-top: 1em;
@@ -188,33 +212,34 @@ ul{
                 // bottom: 5em;
             }
 
-            li{
-                span{
+            li {
+                span {
                     margin-left: 1em;
                     // border: 2px solid black;
                     font-weight: lighter;
-                    a{
+
+                    a {
                         color: black;
                         text-decoration: none;
                         display: block;
                         // padding: .5em;
                         font-size: 1em;
-                        
+
                         text-align: left;
-                 
-                        
+
+
                     }
-            
-                    &:hover{
+
+                    &:hover {
                         font-weight: bold;
                     }
                 }
             }
         }
-    
-        li{
-           
-            a{
+
+        li {
+
+            a {
                 color: black;
                 text-decoration: none;
                 display: block;
@@ -222,44 +247,46 @@ ul{
                 font-size: 1em;
                 font-weight: lighter;
                 text-align: left;
-         
-                
+
+
             }
-    
-            &:hover{
+
+            &:hover {
                 font-weight: bolder;
             }
         }
     }
-    img{
+
+    img {
         width: 24px;
         margin: .8em;
         // color: white;
     }
-    a{
+
+    a {
         color: black;
         text-decoration: none;
         display: block;
         color: white;
     }
 
-    .ham{
+    .ham {
         cursor: pointer;
     }
 
-    .lg{
+    .lg {
         color: black;
         font-size: 17px;
         margin-top: .7em;
     }
 
-    .noti{
+    .noti {
         margin-left: 6em;
         width: 22px;
         cursor: pointer;
     }
 
-    .user{
+    .user {
         width: 4vh;
         height: 4vh;
         border-radius: 50%;
