@@ -37,6 +37,10 @@ ul {
   display: none;
 }
 
+.container .user_details {
+  display: none;
+}
+
 .container nav.menu-btn {
   display: block;
 }
