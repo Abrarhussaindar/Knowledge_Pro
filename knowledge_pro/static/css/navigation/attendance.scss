@@ -149,19 +149,10 @@
 
 @media only screen and (min-width: 720px ){
     .main_body{
-        // margin: 4em .5em;
-        // border: 2px solid black;
-        // border-radius: 10px;
-        // background-color: red;
         width: 98.5%;
         height: 95vh;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-    
         .lg{
             margin: -.1em;
-            // border: 1px solid black;
     
             img{
                 margin-top: .2em;
@@ -173,7 +164,6 @@
     
         .atten{
             span{
-                // border: 1px solid black;
                 img{
                     vertical-align: -2px;
                     width: 3vh;
@@ -185,36 +175,27 @@
             font-weight: 500;
         }
         .table_container{
-            // border: 1px solid black;
             border-radius: 10px;
             margin-top: -1em;
             margin-left: 5em;
-            // width: 90vh;
             height: 75%;
             padding: .5em;
             overflow: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            // display: inline-grid;
-            // grid-template-columns: auto auto;
-            // justify-content: space-between;
     
     
             table{
                 margin-left: 2em;
                 margin-top: .2em;
-                // padding: -5em;
-                // border: 1px solid black;
                 border-radius: 10px;
-                // border-top: 5px solid black;
+    
                 tr{
-                    // border: 1px solid black;
     
                     th{
                         font-size: 15px;
                         font-weight: 700;
-                        // margin-top: 1em;
                         border: 1px solid black;
                         padding: .2em;
                         border-radius: 10px;
