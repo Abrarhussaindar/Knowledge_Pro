@@ -32,7 +32,7 @@ ul {
     // border: 2px solid black;
 
     .navigation {
-        // display: none;
+        display: none;
     }
 
     .notify {
@@ -63,7 +63,10 @@ ul {
         }
 
         .user-menu-exit {
-            float: right;
+            position: fixed;
+            // top: 0;
+            right: 10;
+            // float: right;
             margin: 1em;
             width: 20px;
             cursor: pointer;
@@ -268,8 +271,8 @@ ul {
 
         .logo {
             border: 1px solid black;
-            // margin-left: 5px;
-            width: 30vh;
+            margin-left: 15px;
+            width: 40vh;
             margin-top: -.5em;
 
         }
@@ -423,6 +426,8 @@ ul {
             }
     
             .user-menu-exit {
+                position: fixed;
+                top: 0;
                 float: right;
                 margin: 1em;
                 width: 20px;
@@ -432,7 +437,7 @@ ul {
     
             ul {
                 li {
-                    a {
+                    a { 
                         color: black;
                         margin: 1em 2em;
                         font-weight: 400;
@@ -626,7 +631,7 @@ ul {
             .logo {
                 border: 1px solid black;
                 margin-left: 2px;
-                width: 45vh;
+                width: 40vh;
                 margin-top: -.5em;
     
             }

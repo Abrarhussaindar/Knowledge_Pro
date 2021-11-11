@@ -63,7 +63,8 @@ ul {
 }
 
 .container .notify .user-menu-exit {
-  float: right;
+  position: fixed;
+  right: 10;
   margin: 1em;
   width: 20px;
   cursor: pointer;
@@ -262,8 +263,8 @@ ul {
 
 .container .navigation .logo {
   border: 1px solid black;
-  margin-left: 5px;
-  width: 45vh;
+  margin-left: 15px;
+  width: 40vh;
   margin-top: -.5em;
 }
 
@@ -387,6 +388,8 @@ ul {
     margin: 1em;
   }
   .container .notify .user-menu-exit {
+    position: fixed;
+    top: 0;
     float: right;
     margin: 1em;
     width: 20px;
@@ -563,7 +566,7 @@ ul {
   .container .navigation .logo {
     border: 1px solid black;
     margin-left: 2px;
-    width: 45vh;
+    width: 40vh;
     margin-top: -.5em;
   }
   .container .navigation .list {

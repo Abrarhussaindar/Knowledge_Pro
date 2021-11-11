@@ -210,7 +210,10 @@ def hostel_leave_entry_form(request):
         print(form.is_valid())
         if form.is_valid():
 
-            form.save()
+            instance = form.save(commit=False)
+            instance.roll_number = request.user
+            # print(form.cleaned_data.get('email'))
+            instance.save()
             # print(form.cleaned_data.get('email'))
             
             return redirect('hostel leave entry')
@@ -236,6 +239,7 @@ def hostel_leave_entry(request):
 def support(request):
     context1 = common_code(request)
     student = request.user
+    # print("roll_num",student)
     s_r = Support_Request_form.objects.filter(roll_number=student)
     print(s_r)
     context = {
@@ -255,8 +259,10 @@ def support_request_form(request):
         print(form.is_valid())
         if form.is_valid():
 
-            form.save()
+            instance = form.save(commit=False)
+            instance.roll_number = request.user
             # print(form.cleaned_data.get('email'))
+            instance.save()
             
             return redirect('support')
 

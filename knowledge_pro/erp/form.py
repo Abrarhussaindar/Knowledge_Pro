@@ -16,10 +16,10 @@ class TakeProfilePic(forms.ModelForm):
 class hostel_leave_form(forms.ModelForm):
     class Meta:
         model = Hostel_Leave_Entry
-        fields = ('academic_year', 'roll_number', 'out_pass_type', 'out_pass_from', 'out_pass_to' , 'request_type', 'reason')
+        fields = ('academic_year', 'out_pass_type', 'out_pass_from', 'out_pass_to' , 'request_type', 'reason')
 
 
 class request_form(forms.ModelForm):
     class Meta:
         model = Support_Request_form
-        fields = ('roll_number', 'category_name', 'description')
+        fields = ('category_name', 'description')
