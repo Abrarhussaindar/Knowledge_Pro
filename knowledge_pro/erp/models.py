@@ -86,8 +86,8 @@ class Student(AbstractBaseUser):
 
     objects = MyUserManager()
 
-    # def __str__(self):
-    #     return self.first_name
+    def __str__(self):
+        return self.first_name
 
 
     def has_perm(self, perm, obj=None):
