@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT new_project.wsgi:application
+web: waitress-serve --port=$PORT knowledge_pro.wsgi:application
