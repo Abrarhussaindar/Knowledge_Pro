@@ -15,7 +15,6 @@ class MyUserManager(BaseUserManager):
             first_name = first_name,
             middle_name = middle_name,
             last_name = last_name,
-
             phone_number = phone_number,
 #             # alternative_phone_number = alternative_phone_number,
 #             # address = address,
@@ -36,6 +35,7 @@ class MyUserManager(BaseUserManager):
     def create_superuser(self, email, first_name, middle_name, last_name, phone_number, password=None):
         user=self.create_user(
             email=email,
+            # roll_number = roll_number,
             first_name = first_name,
             middle_name = middle_name,
             last_name = last_name,
@@ -82,7 +82,7 @@ class Student(AbstractBaseUser):
 
     USERNAME_FIELD = 'roll_number'
     # # REQUIRED_FIELDS = ['first_name']
-    REQUIRED_FIELDS = ['first_name','middle_name', 'last_name', 'phone_number',]
+    REQUIRED_FIELDS = ['email', 'first_name','middle_name', 'last_name', 'phone_number',]
 
     objects = MyUserManager()
 
