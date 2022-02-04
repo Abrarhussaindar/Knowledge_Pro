@@ -73,10 +73,11 @@ body{
             // background: linear-gradient(-135deg, #c850c0, #4158d0);
         }
         .wrapper{
+          // display: flex;
             // width: 30px;
             background: #fff;
             border-radius: 15px;
-            height: 35vh;
+            height: 40vh;
             box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
           }
 
@@ -162,6 +163,28 @@ body{
           form .field input[type="submit"]:active{
             transform: scale(0.95);
           }
+
+          .field{
+            
+            a{
+              // margin-top: 1em;
+              // margin-left: 1em;
+              border: 2px solid #c850c0;
+              border-radius: 50px;
+              padding: .5em;
+              text-decoration: none;
+              color: black;
+              font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+
+              &:hover{
+                color: white;
+                // border: 2px solid #4158d0;
+                background: linear-gradient(-135deg, #c850c0, #4158d0);
+              }
+            }
+          } 
         //   form .signup-link{
         //     color: #262626;
         //     margin-top: 20px;
@@ -185,17 +208,18 @@ body{
         // border-radius: 10px;
         // border: 2px solid black;
         margin-top: 5em;
-        margin-left: -8em;
+        // margin-left: -8em;
         display: flex;
         justify-content: center;
         align-items: center;
         font-weight: lighter;
         color: black;
+        font-size: 13px;
     
-        span{
-            font-weight: 400;
-            color: black;
-        }
+        // span{
+        //     font-weight: 400;
+        //     color: black;
+        // }
     
     }
 }

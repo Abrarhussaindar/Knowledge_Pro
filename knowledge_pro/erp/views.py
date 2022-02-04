@@ -40,6 +40,19 @@ def login_page(request):
     context = {}
     return render(request, 'login_page.html',context)
 
+# def create_new_customer(request):
+#     form = CreateStudent()
+#     if request.method  == 'POST':
+#         form = CreateStudent(request.POST)
+#         print(form.is_valid())
+#         # print(form.cleaned_data.get('email'))
+#         if form.is_valid():
+#             form.save()
+#             print(form.cleaned_data.get('email'))
+#             return redirect('login')
+#     context = {'form': form}
+#     return render(request, 'cna.html', context)
+
 def attendance(request):
     context1 = common_code(request)
 
@@ -49,32 +62,32 @@ def attendance(request):
     # print(atten[0].present)
 
     total_conducted = 0
-    for i in range(0,8):
+    for i in range(0,1):
         total_conducted += sub[i].conducted
-    # print(total_conducted)
+    print(total_conducted)
 
     total_present = 0
-    for i in range(0,8):
-       total_present += atten[i].present
+    for i in range(0,1):
+        total_present += atten[i].present
     #    print("total at "+ str(i) + " ", str(total_present))
     # print(total_present)
 
     total_absent_hours = 0
-    for i in range(0,8):
+    for i in range(0,1):
         total_absent_hours += atten[i].total_hours_absent
     # print(total_absent_hours)
 
     total_percentage = 0
-    for i in range(0,8):
+    for i in range(0,1):
         total_percentage += atten[i].percentage
-    print(int(total_percentage/8))
+    print(int(total_percentage/2))
 
 
     context = {
         'total_present': total_present,
         'total_conducted': total_conducted,
         'total_absent_hours': total_absent_hours,
-        'total_percentage': int(total_percentage/8),
+        'total_percentage': int(total_percentage/2),
         'sub': sub,
         'atten': atten,
         'context1': context1,
@@ -239,7 +252,7 @@ def hostel_leave_entry(request):
 def support(request):
     context1 = common_code(request)
     student = request.user
-    # print("roll_num",student)
+    print("roll_num",student)
     s_r = Support_Request_form.objects.filter(roll_number=student)
     print(s_r)
     context = {

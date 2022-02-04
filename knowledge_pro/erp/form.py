@@ -3,10 +3,10 @@ from django.db.models import fields
 from .models import *
 from django.contrib.auth.forms import UserCreationForm
 
-class CreateCustomer(UserCreationForm):
+class CreateStudent(UserCreationForm):
     class Meta:
         model = Student
-        fields = ('first_name', 'middle_name', 'last_name', 'phone_number' , 'email', 'password1', 'password2')
+        fields = ('first_name', 'middle_name', 'last_name','email', 'password1', 'password2')
 
 class TakeProfilePic(forms.ModelForm):
     class Meta:
