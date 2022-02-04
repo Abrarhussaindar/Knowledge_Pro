@@ -13,22 +13,28 @@
 body{
     background: url(./presi.jpg ) no-repeat center fixed;
     background-size: cover;
-    
+    width: 100vw;
+    display: grid;
+    // justify-content: center;
+    // align-items: center;
     .kpro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         margin-top: 2em;
+        // border: 2px solid black;
+        width: max-content;
+        height: max-content;
         margin-left: 2.5em;
         
     }
     .container{
+      // display: flex;
+      // justify-content: center;
         // border: 2px solid black;
         border-radius: 15px;
         height: 55vh;
         width: 50vh;
-        margin-left: 5em;
-        margin-top: 1em;
+        // margin-left: .1em;
+        margin-top: -3em;
         background: white;
         // opacity: .6;
 

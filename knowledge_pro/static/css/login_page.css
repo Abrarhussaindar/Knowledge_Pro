@@ -12,19 +12,19 @@
 body {
   background: url(./presi.jpg) no-repeat center fixed;
   background-size: cover;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
 }
 
 body .kpro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 2em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin-left: 2.5em;
 }
 
@@ -32,8 +32,7 @@ body .container {
   border-radius: 15px;
   height: 55vh;
   width: 50vh;
-  margin-left: 5em;
-  margin-top: 1em;
+  margin-top: -3em;
   background: white;
 }
 

@@ -5,14 +5,16 @@
 
 .main {
   border-radius: 10px;
+  border: 2px solid black;
   margin: .5em;
   margin-top: 4.3em;
-  height: 85vh;
+  height: 90vh;
 }
 
 .main .logo img {
-  margin: 1em 3em;
-  width: 50vh;
+  margin: .2em .1em;
+  width: 42vh;
+  border-radius: 10px;
 }
 
 .main .profile {
@@ -28,14 +30,15 @@
   border-radius: 15px;
   padding: 5px;
   margin: 5px;
-  width: 20vh;
+  margin-top: 2em;
+  width: 15vh;
   height: 20vh;
   cursor: pointer;
 }
 
 .main .profile .img img {
-  width: 20vh;
-  height: 20vh;
+  width: 13vh;
+  height: 13vh;
   border-radius: 50%;
 }
 
@@ -47,6 +50,7 @@
   margin-left: 1em;
   top: 1px;
   height: 20vh;
+  width: 60vw;
 }
 
 .main .profile .details table td {
@@ -54,13 +58,13 @@
 }
 
 .main .profile .details table td .stu_details {
-  font-size: 12.5px;
+  font-size: 10px;
   font-weight: 500;
 }
 
 .main .profile .details table section {
   color: #686666;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: lighter;
 }
 
@@ -85,27 +89,21 @@
 }
 
 .main .attendance_details .grah {
-  margin: 1em 5em;
-  width: 30vh;
-  height: 30vh;
+  margin: .5em 2.5em;
+  width: 25vh;
+  height: 25vh;
 }
 
-.footer {
+.main .footer {
   border-radius: 10px;
-  margin: .5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border: 2px solid black;
+  padding: .5em;
+  margin: 1em;
+  font-size: 15px;
   font-weight: lighter;
 }
 
-.footer span {
+.main .footer span {
   font-weight: 400;
   color: #000000;
 }

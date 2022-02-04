@@ -25,7 +25,7 @@ ul {
   display: flex;
   place-content: space-between;
   margin: 2px 7px;
-  width: 62vh;
+  width: 97vw;
   border-radius: 10px;
 }
 
@@ -49,7 +49,7 @@ ul {
   position: fixed;
   z-index: 999;
   width: 50%;
-  right: 5em;
+  right: 10em;
   top: 3em;
   background: white;
   height: 50vh;
@@ -63,8 +63,7 @@ ul {
 }
 
 .container .notify .user-menu-exit {
-  position: fixed;
-  right: 10;
+  float: right;
   margin: 1em;
   width: 20px;
   cursor: pointer;
@@ -84,11 +83,11 @@ ul {
 .container .user_details {
   position: fixed;
   z-index: 999;
-  width: 80%;
+  width: 100%;
   right: 0;
   top: 0;
   background: white;
-  height: 120vh;
+  height: 100vh;
   border: 1px solid black;
   border-radius: 10px;
 }

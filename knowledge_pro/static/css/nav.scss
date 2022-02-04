@@ -27,7 +27,7 @@ ul {
     // justify-content: center;
     // align-items: center;
     margin: 2px 7px;
-    width: 62vh;
+    width: 97vw;
     border-radius: 10px;
     // border: 2px solid black;
 
@@ -50,7 +50,7 @@ ul {
         position: fixed;
         z-index: 999;
         width: 50%;
-        right: 5em;
+        right: 10em;
         top: 3em;
         background: white;
         height: 50vh;
@@ -63,10 +63,10 @@ ul {
         }
 
         .user-menu-exit {
-            position: fixed;
+            // position: fixed;
             // top: 0;
-            right: 10;
-            // float: right;
+            // right: - 1;
+            float: right;
             margin: 1em;
             width: 20px;
             cursor: pointer;
@@ -92,12 +92,12 @@ ul {
     .user_details {
         position: fixed;
         z-index: 999;
-        width: 80%;
+        width: 100%;
         right: 0;
         top: 0;
         // margin-top: -2em;
         background: white;
-        height: 120vh;
+        height: 100vh;
         // padding: 1em;
         // overflow: hidden;
         border: 1px solid black;
