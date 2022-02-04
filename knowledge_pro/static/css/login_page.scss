@@ -8,22 +8,32 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     // background-color: red;
+    // overflow: hidden;
 }
 
 body{
-    background: url(./presi.jpg ) no-repeat center fixed;
+    background: url(./presi.jpg ) no-repeat fixed;
     background-size: cover;
-    width: 100vw;
-    display: grid;
+    // overflow: hidden;
+    width: 91%;
+    // display: grid;
+    // border: 2px solid black;
     // justify-content: center;
     // align-items: center;
+    // background-color: red;
+    height: 100vh;
     .kpro{
 
-        margin-top: 2em;
+        margin: 1em;
         // border: 2px solid black;
         width: max-content;
         height: max-content;
-        margin-left: 2.5em;
+        img{
+          width: 80vw;
+        }
+        // width: max-content;
+        // height: max-content;
+        // margin-left: 2.5em;
         
     }
     .container{
@@ -32,9 +42,9 @@ body{
         // border: 2px solid black;
         border-radius: 15px;
         height: 55vh;
-        width: 50vh;
-        // margin-left: .1em;
-        margin-top: -3em;
+        width: 80vw;
+        margin-left: 1em;
+        // margin-top: -3em;
         background: white;
         // opacity: .6;
 
@@ -43,7 +53,7 @@ body{
             img{
                 border-radius: 5px;
                 margin: .5em 2.5em;
-                width: 40vh;
+                width: 60vw;
                 height: 10vh;
                 // border: 1px solid black;
                 // opacity: 1;
@@ -52,8 +62,9 @@ body{
 
         .uni{
             margin-top: -1em;
-            margin-left: 3.3em;
-            margin-right: 2em;
+            // margin-left: 3.3em;
+            // margin-right: 2em;
+            margin-left: .3em;
             // border: 1px solid black;
             font-size: 1em;
             font-weight: 500;
@@ -73,17 +84,19 @@ body{
             color: #fff;
             user-select: none;
             padding: .5em;
-            width: 47.4vh;
+            width: 74.5vw;
             border-radius: 12px 12px 0 0;
             background: linear-gradient(-135deg, #c850c0, #4158d0);
             // background: linear-gradient(-135deg, #c850c0, #4158d0);
         }
         .wrapper{
           // display: flex;
+          // border: 2px solid black;
             // width: 30px;
             background: #fff;
             border-radius: 15px;
-            height: 40vh;
+            height: 35vh;
+            width: 80vw;
             box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
           }
 
@@ -98,7 +111,7 @@ body{
           }
           .wrapper form .field input{
             height: 100%;
-            width: 90%;
+            width: 100%;
             outline: none;
             font-size: 17px;
             padding-left: 20px;
@@ -214,7 +227,8 @@ body{
       border-radius: 10px;
       border: 2px solid black;
       padding: .5em;
-      margin: 1em;
+      margin-top: 1em;  
+      // margin-top: 5em;
       font-size: 15px;
       // display: flex;
       // justify-content: center;
