@@ -1,24 +1,26 @@
 .main_body {
-  margin: 4em .5em;
+  margin: 4.5em 1em;
   border: 2px solid black;
   border-radius: 10px;
-  width: 62vh;
-  height: 95%;
+  width: 90vw;
+  height: 95vh;
 }
 
-.main_body .btns {
-  margin-left: 19em;
-  margin-top: -3em;
-  width: 12vh;
+.main_body .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.main_body .btns .cancle {
+.main_body .title .ti {
+  font-size: 15px;
+}
+
+.main_body .title .btns .cancle {
   border-radius: 8px;
   color: #fff;
   background-color: #237dd6;
@@ -34,7 +36,7 @@
   vertical-align: middle;
 }
 
-.main_body .btns .cancle:hover {
+.main_body .title .btns .cancle:hover {
   background-color: #135699;
 }
 
@@ -197,16 +199,10 @@
 
 .footer {
   border-radius: 10px;
-  margin: -4em 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border: 2px solid black;
+  padding: .5em;
+  margin: 1em;
+  font-size: 15px;
   font-weight: lighter;
 }
 

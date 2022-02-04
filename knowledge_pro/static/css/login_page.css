@@ -166,19 +166,17 @@ body .container .field a:hover {
 }
 
 body .footer {
-  margin-top: 5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: .5em;
+  margin: 1em;
+  font-size: 15px;
   font-weight: lighter;
-  color: black;
-  font-size: 13px;
+}
+
+body .footer span {
+  font-weight: 400;
+  color: #000000;
 }
 
 @media only screen and (min-width: 720px) {

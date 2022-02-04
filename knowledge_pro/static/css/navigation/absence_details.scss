@@ -1,37 +1,41 @@
-.main_body{
-    margin: 4em .5em;
+.main_body {
+    margin: 4.5em 1em;
     border: 2px solid black;
     border-radius: 10px;
     // background-color: red;
-    width: 62vh;
+    width: 90vw;
     height: 110vh;
 
-    .lg{
+    .lg {
         margin: .1em;
         // border: 1px solid black;
 
-        img{
+        img {
             margin-top: .2em;
-            margin-left: 3em;
-            width: 50vh;
-            height: 10vh;
+            // margin-left: 3em;
+            width: 90vw;
+            height: 8vh;
+            border-radius: 10px;
         }
     }
 
-    .atten{
-        span{
+    .atten {
+        span {
+
             // border: 1px solid black;
-            img{
+            img {
                 vertical-align: -2px;
                 width: 3vh;
                 height: 3vh;
             }
         }
+
         margin: 1em 1em;
         font-size: 1.1em;
         font-weight: 500;
     }
-    .table_container{
+
+    .table_container {
         border: 1px solid black;
         border-radius: 10px;
         margin: .5em;
@@ -41,16 +45,17 @@
         overflow: auto;
 
 
-        table{
+        table {
             margin: .6em;
             // padding: -5em;
             border: 1px solid black;
             border-radius: 10px;
+
             // border-top: 5px solid black;
-            tr{
+            tr {
                 // border: 1px solid black;
 
-                th{
+                th {
                     font-size: 15px;
                     font-weight: 700;
                     // margin-top: 1em;
@@ -59,28 +64,31 @@
                     padding: .2em;
 
 
-                    .t_h{
+                    .t_h {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
                 }
-                td{
+
+                td {
                     height: 1vh;
                     // font-size: 20px;
                     border: 1px solid rgb(129, 122, 122);
                     border-radius: 10px;
 
-                    .s_no{
+                    .s_no {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
-                    .subs_date{
+
+                    .subs_date {
                         margin: 1em;
                         font-size: 13px;
                     }
-                    .subs{
+
+                    .subs {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -88,35 +96,35 @@
                     }
 
 
-                    .type{
+                    .type {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
 
-                    .conducted{
+                    .conducted {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
 
-                    .present{
+                    .present {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
 
-                    .t_h_a{
+                    .t_h_a {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
 
-                    .per{
+                    .per {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -126,7 +134,7 @@
         }
     }
 
-    .another_table{
+    .another_table {
         border: 1px solid black;
         border-radius: 10px;
         margin: .5em;
@@ -136,16 +144,17 @@
         overflow: auto;
 
 
-        table{
+        table {
             margin: .6em;
             // padding: -5em;
             border: 1px solid black;
             border-radius: 10px;
+
             // border-top: 5px solid black;
-            tr{
+            tr {
                 // border: 1px solid black;
 
-                th{
+                th {
                     font-size: 15px;
                     font-weight: 700;
                     // margin-top: 1em;
@@ -154,28 +163,31 @@
                     padding: .2em;
 
 
-                    .t_h{
+                    .t_h {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
                 }
-                td{
+
+                td {
                     height: 1vh;
                     // font-size: 20px;
                     border: 1px solid rgb(129, 122, 122);
                     border-radius: 10px;
 
-                    .s_no{
+                    .s_no {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
-                    .subs_date{
+
+                    .subs_date {
                         margin: 1em;
                         font-size: 13px;
                     }
-                    .subs{
+
+                    .subs {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -183,35 +195,35 @@
                     }
 
 
-                    .type{
+                    .type {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
 
-                    .conducted{
+                    .conducted {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
 
-                    .present{
+                    .present {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
 
-                    .t_h_a{
+                    .t_h_a {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
 
 
-                    .per{
+                    .per {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -220,28 +232,47 @@
             }
         }
     }
+
+
 }
-
-
-.footer{
+.footer {
     // background-color: chartreuse;
     border-radius: 10px;
-    // border: 2px solid black;
-    margin: -3.5em 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 2px solid black;
+    padding: .5em;
+    margin: 1em;
+    font-size: 15px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     font-weight: lighter;
 
-    span{
+    span {
         font-weight: 400;
         color: #000000;
     }
 
 }
 
-@media only screen and (min-width: 720px ){
-    .main_body{
+// .footer{
+//     // background-color: chartreuse;
+//     border-radius: 10px;
+//     // border: 2px solid black;
+//     margin: -3.5em 2em;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-weight: lighter;
+
+//     span{
+//         font-weight: 400;
+//         color: #000000;
+//     }
+
+// }
+
+@media only screen and (min-width: 720px) {
+    .main_body {
         // margin: 4em .5em;
         // border: 2px solid black;
         // border-radius: 10px;
@@ -250,33 +281,36 @@
         // height: 110vh;
         width: 98.5%;
         height: 85vh;
-    
-        .lg{
+
+        .lg {
             margin: -.1em;
             // border: 1px solid black;
-    
-            img{
+
+            img {
                 margin-top: .2em;
                 margin-left: 33em;
                 width: 50vh;
                 height: 10vh;
             }
         }
-    
-        .atten{
-            span{
+
+        .atten {
+            span {
+
                 // border: 1px solid black;
-                img{
+                img {
                     vertical-align: -2px;
                     width: 3vh;
                     height: 3vh;
                 }
             }
+
             margin: .3em 5em;
             font-size: 1.1em;
             font-weight: 500;
         }
-        .table_container{
+
+        .table_container {
             // border: 1px solid black;
             border-radius: 10px;
             margin-left: 5em;
@@ -288,83 +322,87 @@
             // display: flex;
             // justify-content: center;
             // align-items: center;
-    
-            table{
+
+            table {
                 margin: .6em;
                 // padding: -5em;
                 border: 1px solid black;
                 border-radius: 10px;
+
                 // border-top: 5px solid black;
-                tr{
+                tr {
                     // border: 1px solid black;
-    
-                    th{
+
+                    th {
                         font-size: 15px;
                         font-weight: 700;
                         // margin-top: 1em;
                         border: 1px solid black;
                         border-radius: 10px;
                         padding: .2em;
-    
-    
-                        .t_h{
+
+
+                        .t_h {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
                     }
-                    td{
+
+                    td {
                         height: 1vh;
                         // font-size: 20px;
                         border: 1px solid rgb(129, 122, 122);
                         border-radius: 10px;
-    
-                        .s_no{
+
+                        .s_no {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-                        .subs_date{
+
+                        .subs_date {
                             margin: 1em;
                             font-size: 13px;
                         }
-                        .subs{
+
+                        .subs {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             font-size: 15px;
                         }
-    
-    
-                        .type{
+
+
+                        .type {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-    
-    
-                        .conducted{
+
+
+                        .conducted {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-    
-    
-                        .present{
+
+
+                        .present {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-    
-    
-                        .t_h_a{
+
+
+                        .t_h_a {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-    
-    
-                        .per{
+
+
+                        .per {
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -373,8 +411,8 @@
                 }
             }
         }
-    
-        .another_table{
+
+        .another_table {
             margin-top: -14.6em;
             margin-left: 40em;
             border: 1px solid black;
@@ -385,85 +423,89 @@
             padding: .5em;
             overflow: auto;
             // background-color: red;
-    
-    
-            table{
+
+
+            table {
                 // background-color: red;
                 margin: .6em;
                 // padding: -5em;
                 border: 1px solid black;
                 border-radius: 10px;
+
                 // border-top: 5px solid black;
-                tr{
+                tr {
                     // border: 1px solid black;
-    
-                    th{
+
+                    th {
                         font-size: 15px;
                         font-weight: 700;
                         // margin-top: 1em;
                         border: 1px solid black;
                         border-radius: 10px;
                         padding: .2em;
-    
-    
-                        .t_h{
+
+
+                        .t_h {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
                     }
-                    td{
+
+                    td {
                         height: 1vh;
                         // font-size: 20px;
                         border: 1px solid rgb(129, 122, 122);
                         border-radius: 10px;
-    
-                        .s_no{
+
+                        .s_no {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-                        .subs_date{
+
+                        .subs_date {
                             margin: 1em;
                             font-size: 13px;
                         }
-                        .subs{
+
+                        .subs {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             font-size: 15px;
                         }
-    
-    
-                        .type{
+
+
+                        .type {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-    
-    
-                        .conducted{
+
+
+                        .conducted {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-    
-    
-                        .present{
+
+
+                        .present {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-    
-    
-                        .t_h_a{
+
+
+                        .t_h_a {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-    
-    
-                        .per{
+
+
+                        .per {
                             display: flex;
                             justify-content: center;
                             align-items: center;

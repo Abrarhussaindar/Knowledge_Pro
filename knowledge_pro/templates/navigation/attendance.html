@@ -1,108 +1,74 @@
 {% load static %}
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-    {% block title %}
-    Attendance
-    {% endblock %}
-</title>
-<link rel="stylesheet" href="{% static 'css/navigation/attendance.css' %}">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% block title %} Attendance {% endblock %}</title>
+<link rel="stylesheet" href="{% static 'css/navigation/attendance.css' %}" />
 
-{%  include 'navbar.html' %}
-{% block content %}
+{% include 'navbar.html' %} {% block content %}
 <!-- <div class="logo">
     <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
 </div> -->
 
 <div class="main_body">
     <div class="lg">
-        <img src="{% static 'images/logo.png' %}" alt="">
+        <img src="{% static 'images/logo.png' %}" alt="" />
     </div>
-    <hr>
+    <hr />
     <div class="atten">
-        <span><img src="{% static 'images/calendar.png' %}" alt=""></span> Attendance
+        <span><img src="{% static 'images/calendar.png' %}" alt="" /></span>
+        Attendance
     </div>
     <div class="table_container">
-               <table>
+        <table>
             <tr>
                 <th>
-                    <div class="t_h">
-                        S.No
-                    </div>
+                    <div class="t_h">S.No</div>
                 </th>
                 <th>
-                    <div class="t_h">
-                        Course Name
-                    </div>
+                    <div class="t_h">Course Name</div>
                 </th>
                 <th>
-                    <div class="t_h">
-                        Attendance Type
-                    </div>
+                    <div class="t_h">Attendance Type</div>
                 </th>
                 <th>
-                    <div class="t_h">
-                        Conducted
-                    </div>
+                    <div class="t_h">Conducted</div>
                 </th>
                 <th>
-                    <div class="t_h">
-                        Present
-                    </div>
+                    <div class="t_h">Present</div>
                 </th>
                 <th>
-                    <div class="t_h">
-                        Total Hours Absent
-                    </div>
+                    <div class="t_h">Total Hours Absent</div>
                 </th>
                 <th>
-                    <div class="t_h">
-                        Percentage
-                    </div>
+                    <div class="t_h">Percentage</div>
                 </th>
             </tr>
 
             {% for attens in atten %}
             <tr>
                 <td>
-                    <div class="s_no">
-                        {{attens.sub.id}}
-                    </div>
+                    <div class="s_no">{{attens.sub.id}}</div>
                 </td>
                 <td>
-                    <div class="subs_date">
-                        {{attens.sub.sub_name}}
-                    </div>
+                    <div class="subs_date">{{attens.sub.sub_name}}</div>
                 </td>
                 <td>
-                    <div class="subs">
-                        {{attens.sub.sub_type}}
-                    </div>
+                    <div class="subs">{{attens.sub.sub_type}}</div>
                 </td>
 
                 <td>
-                    <div class="subs">
-                        {{attens.sub.conducted}}
-                    </div>
+                    <div class="subs">{{attens.sub.conducted}}</div>
                 </td>
                 <td>
-                    <div class="subs">
-                        {{attens.present}}
-                    </div>
+                    <div class="subs">{{attens.present}}</div>
                 </td>
                 <td>
-                    <div class="subs">
-                        {{attens.total_hours_absent}}
-                    </div>
+                    <div class="subs">{{attens.total_hours_absent}}</div>
                 </td>
                 <td>
-                    <div class="subs">
-                        {{attens.percentage}}
-                    </div>
+                    <div class="subs">{{attens.percentage}}</div>
                 </td>
-                
-                
             </tr>
             {% endfor %}
             <tr>
@@ -112,9 +78,7 @@
                     </div>
                 </td>
                 <td>
-                    <div class="subs">
-                        Total
-                    </div>
+                    <div class="subs">Total</div>
                 </td>
                 <td>
                     <div class="type">
@@ -122,26 +86,20 @@
                     </div>
                 </td>
                 <td>
-                    <div class="conducted">
-                        {{total_conducted}}
-                    </div>
+                    <div class="conducted">{{total_conducted}}</div>
                 </td>
                 <td>
-                    <div class="conducted">
-                        {{total_present}}
-                    </div>
+                    <div class="conducted">{{total_present}}</div>
                 </td>
                 <td>
-                    <div class="conducted">
-                        {{total_absent_hours}}
-                    </div>
+                    <div class="conducted">{{total_absent_hours}}</div>
                 </td>
                 <td>
                     <div class="conducted">
                         <!-- toc -->
                     </div>
                 </td>
-            </tr> 
+            </tr>
             <tr>
                 <td>
                     <div class="s_no">
@@ -149,9 +107,7 @@
                     </div>
                 </td>
                 <td>
-                    <div class="subs">
-                       Total Percentage
-                    </div>
+                    <div class="subs">Total Percentage</div>
                 </td>
                 <td>
                     <div class="type">
@@ -170,27 +126,22 @@
                 </td>
                 <td>
                     <div class="conducted">
-                    <!-- 8.0 -->
-                </div>
-                </td>
-                <td>
-                    <div class="type">
-                        {{total_percentage}}
+                        <!-- 8.0 -->
                     </div>
                 </td>
-                
+                <td>
+                    <div class="type">{{total_percentage}}</div>
+                </td>
             </tr>
         </table>
 
-        
+    </div>
+    <div class="footer">
+        &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
     </div>
 </div>
 
-<div class="footer">
-    &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
-</div>
 <!-- {% for attens in atten %}
-             
                     <td>
                         <div class="s_no">
                             {{attens.present}}
@@ -210,9 +161,7 @@
                 {% endfor %} -->
 {% endblock %}
 
-               
-                
-                <!-- <td>
+<!-- <td>
                     <div class="type">
                         {{subs.sub_type}}
                     </div>
@@ -276,8 +225,8 @@
                     </div>
                 </td>
             </tr> -->
-            
-            <!-- <tr>
+
+<!-- <tr>
                 <td>
                     <div class="s_no">
                         3

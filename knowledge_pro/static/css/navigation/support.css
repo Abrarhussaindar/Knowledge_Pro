@@ -1,8 +1,8 @@
 .main_body {
-  margin: 4em .5em;
+  margin: 4.5em 1em;
   border: 2px solid black;
   border-radius: 10px;
-  width: 62vh;
+  width: 90vw;
   height: 120vh;
 }
 
@@ -12,25 +12,26 @@
 
 .main_body .lg img {
   margin-top: .2em;
-  margin-left: 3em;
-  width: 50vh;
-  height: 10vh;
+  width: 90vw;
+  height: 8vh;
+  border-radius: 10px;
 }
 
-.main_body .btns {
-  margin-left: 18em;
-  margin-bottom: 1em;
-  margin-top: -3em;
-  width: 16vh;
+.main_body .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.main_body .btns .cancle {
+.main_body .title .btns {
+  margin-top: 1em;
+}
+
+.main_body .title .btns .cancle {
   border-radius: 8px;
   color: #fff;
   background-color: #237dd6;
@@ -46,17 +47,17 @@
   vertical-align: middle;
 }
 
-.main_body .btns .cancle:hover {
+.main_body .title .btns .cancle:hover {
   background-color: #135699;
 }
 
-.main_body .atten {
+.main_body .title .atten {
   margin: 1em 1em;
   font-size: 1.1em;
   font-weight: 500;
 }
 
-.main_body .atten span img {
+.main_body .title .atten span img {
   vertical-align: -2px;
   width: 3vh;
   height: 3vh;
@@ -332,16 +333,10 @@
 
 .footer {
   border-radius: 10px;
-  margin: -4em 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border: 2px solid black;
+  padding: .5em;
+  margin: 1em;
+  font-size: 15px;
   font-weight: lighter;
 }
 
