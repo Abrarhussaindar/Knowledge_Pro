@@ -61,7 +61,7 @@ class Student(AbstractBaseUser):
     uid = models.CharField(verbose_name='uid', max_length=20, null=True)
     section = models.CharField(verbose_name='section', max_length=20, null=True)
     dob = models.DateField(verbose_name='dob', max_length=20, null=True)
-    course = models.CharField(verbose_name='course', max_length=200, null=True)
+    # course = models.CharField(verbose_name='course', max_length=200, null=True)
     admitted_through = models.CharField(verbose_name='admitted_through', max_length=200, null=True)
     applied_year = models.CharField(verbose_name='applied_year', max_length=20, null=True)
     # address = models.CharField(verbose_name='address', max_length=500, null=True)
