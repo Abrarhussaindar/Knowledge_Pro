@@ -23,8 +23,9 @@ body{
     // background-color: red;
     height: 100vh;
     .kpro{
-
-        margin: 1em;
+      display: flex;
+      justify-content: center;
+        // margin: 1em;
         // border: 2px solid black;
         width: max-content;
         height: max-content;
