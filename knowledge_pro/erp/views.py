@@ -40,18 +40,18 @@ def login_page(request):
     context = {}
     return render(request, 'login_page.html',context)
 
-# def create_new_customer(request):
-#     form = CreateStudent()
-#     if request.method  == 'POST':
-#         form = CreateStudent(request.POST)
-#         print(form.is_valid())
-#         # print(form.cleaned_data.get('email'))
-#         if form.is_valid():
-#             form.save()
-#             print(form.cleaned_data.get('email'))
-#             return redirect('login')
-#     context = {'form': form}
-#     return render(request, 'cna.html', context)
+def create_new_customer(request):
+    form = CreateStudent()
+    if request.method  == 'POST':
+        form = CreateStudent(request.POST)
+        print(form.is_valid())
+        # print(form.cleaned_data.get('email'))
+        if form.is_valid():
+            form.save()
+            print(form.cleaned_data.get('email'))
+            return redirect('login')
+    context = {'form': form}
+    return render(request, 'cna.html', context)
 
 def attendance(request):
     context1 = common_code(request)

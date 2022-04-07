@@ -1,3 +1,4 @@
+from email.mime import application
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
@@ -8,7 +9,7 @@ from django.db.models.expressions import Value
 # Create your models here.
 
 class MyUserManager(BaseUserManager):
-    def create_user(self, roll_number, email,first_name, middle_name, last_name, phone_number, password=None):
+    def create_user(self, roll_number, email,first_name, middle_name, last_name, phone_number,application_number, uid, section, dob, course, admitted_through, applied_year, address, city, state, country, alternate_address, house_number, pincode, password=None):
 
         user=self.model(
             email=self.normalize_email(email),
@@ -17,6 +18,22 @@ class MyUserManager(BaseUserManager):
             middle_name = middle_name,
             last_name = last_name,
             phone_number = phone_number,
+            
+            application_number = application_number,
+            uid = uid,
+            section = section,
+            dob = dob,
+            course = course,
+            admitted_through = admitted_through,
+            applied_year = applied_year,
+
+            address = address,
+            city = city,
+            state = state,
+            country = country,
+            alternate_address = alternate_address,
+            house_number = house_number,
+            picode = pincode,
             # password = password,
 #             # alternative_phone_number = alternative_phone_number,
 #             # address = address,
@@ -42,7 +59,9 @@ class MyUserManager(BaseUserManager):
             middle_name = middle_name,
             last_name = last_name,
             phone_number = phone_number,
-            password=password
+            password=password,
+            # application_number= application_number,
+
         )
         user.is_admin = True
         user.is_superuser = True
@@ -84,7 +103,7 @@ class Student(AbstractBaseUser):
 
     USERNAME_FIELD = 'roll_number'
     # # REQUIRED_FIELDS = ['first_name']
-    REQUIRED_FIELDS = ['first_name','middle_name', 'last_name', 'phone_number',]
+    REQUIRED_FIELDS = ['first_name','middle_name', 'last_name', 'phone_number', 'email']
 
     objects = MyUserManager()
 

@@ -13,7 +13,7 @@ class MyUserAdmin(BaseUserAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide'),
-            'fields': ('first_name' , 'middle_name' , 'last_name' , 'phone_number' ,  'email', 'password1', 'password2'),
+            'fields': ('first_name' , 'middle_name' , 'last_name' , 'phone_number', 'roll_number', 'application_number', 'uid', 'section', 'dob', 'course', 'admitted_through', 'applied_year', 'address', 'city', 'state', 'country','email', 'password1', 'password2'),
         }),
     )
     ordering = ('first_name', 'middle_name', 'last_name', 'email',)
