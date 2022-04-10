@@ -166,6 +166,7 @@
   padding: .5em;
   margin: 1em;
   font-size: 15px;
+  text-align: center;
   font-weight: lighter;
 }
 
@@ -202,7 +203,7 @@
     border: 1px solid black;
     border-radius: 10px;
     margin: .5em;
-    height: 75%;
+    height: 42vw;
     padding: .5em;
     overflow: auto;
   }
@@ -316,5 +317,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.footer {
+  text-align: center;
 }
 /*# sourceMappingURL=time_table.css.map */

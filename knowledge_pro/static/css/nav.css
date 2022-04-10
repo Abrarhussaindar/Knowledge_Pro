@@ -338,6 +338,7 @@ ul {
 
 .container .noti {
   margin-left: 6em;
+  margin-top: .5em;
   width: 22px;
   cursor: pointer;
 }
@@ -356,7 +357,11 @@ ul {
     position: fixed;
     top: 0;
     overflow: hidden;
-    width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: .2em 10em;
+    width: 79vw;
     border-radius: 10px;
   }
   .container .navigation {
@@ -406,7 +411,7 @@ ul {
   .container .user_details {
     position: fixed;
     z-index: 999;
-    width: 35%;
+    width: 27vw;
     right: 0;
     top: 0;
     background: white;
@@ -424,7 +429,7 @@ ul {
     border: 1px solid black;
     border-radius: 10px;
     margin: .5em;
-    height: 75vh;
+    height: 80vh;
     padding: .5em;
     overflow: auto;
   }
@@ -527,7 +532,7 @@ ul {
   }
   .container .user_details .butt {
     margin-top: -8em;
-    margin-left: 16em;
+    margin-left: 20em;
   }
   .container .user_details .butt .btn {
     border: none;
@@ -622,11 +627,11 @@ ul {
   }
   .container .lg {
     color: black;
-    font-size: 17px;
-    margin-top: 1em;
+    font-size: 19px;
+    margin-right: 38em;
   }
   .container .noti {
-    margin-left: 60em;
+    margin-top: .8em;
     width: 22px;
     cursor: pointer;
   }

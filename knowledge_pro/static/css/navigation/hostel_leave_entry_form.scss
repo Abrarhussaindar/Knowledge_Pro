@@ -5,9 +5,12 @@
 //   align-items: center;
 // } */
 
+
+
 .title {
     // border: 2px solid black;
-    margin: 5em 1em;
+    margin: .1em 1em;
+    width: max-content;
     font-size: 1.1em;
     font-weight: 500;
 
@@ -26,15 +29,24 @@
 .body_container {
     //   max-width: 700px;
     //   width: 100%;
-    margin: -4em 1.3em;
+    // margin: 5em 1.3em;
+    margin: 5em 1.3em;
     width: 70vw;
-    height: 80vh;
+    height: 95vh;
     background: #fff;
     padding: 25px 30px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid red;
     // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 
+    .content{
+        margin-top: 1em;
+        border: 2px solid black;
+        width: 60vw;
+        height: 70vh;
+        border-radius: 10px;
+        padding: 1em;
+    }
 
 
     .content form .user-details {
@@ -175,8 +187,9 @@
     border: 2px solid black;
     padding: .5em;
     // margin: 1em;
-    // margin-top: 5em;
+    margin-top: 5em;
     font-size: 15px;
+    text-align: center;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -192,36 +205,52 @@
 
 
 @media only screen and (min-width: 720px) {
-    .title {
-        margin: 5em 6em;
-        font-size: 1.1em;
-        font-weight: 500;
 
-        //   position: relative;
-        span {
 
-            // border: 1px solid black;
-            img {
-                vertical-align: -2px;
-                width: 3vh;
-                height: 3vh;
-            }
-        }
-    }
 
     .body_container {
         //   max-width: 700px;
         //   width: 100%;
-        margin: -4em 6em;
-        width: 50vh;
-        height: 100vh;
+        // margin: -4em 6em;
+        width: 75vw;
+        height: min-content;
+        margin: 0 10em;
+        margin-top: 4.3em;
+        border: 2px solid red;
         background: #fff;
-        padding: 25px 30px;
+        // padding: 25px 30px;
         border-radius: 10px;
-        border: 1px solid black;
+        // border: 1px solid black;
         // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        .title {
+            margin: 0 6em;
+            // border: 2px solid black;
+            width: max-content;
+            font-size: 1.1em;
+            font-weight: 500;
+            margin-bottom: 1em;
+    
+    
+            //   position: relative;
+            span {
+    
+                // border: 1px solid black;
+                img {
+                    vertical-align: -2px;
+                    width: 3vh;
+                    height: 3vh;
+                }
+            }
+        }
 
-
+        .content{
+            border: 2px solid black;
+            width: 20vw;
+            border-radius: 10px;
+            padding: 1em;
+            margin-left: 6.8em;
+            margin-bottom: .5em;
+        }
 
         .content form .user-details {
             display: flex;
@@ -298,7 +327,7 @@
 
         form .button {
             // border: 5px solid black;
-            margin-top: 1em;
+            margin-top: 3em;
             height: 45px;
             // margin: 35px 0
         }
@@ -351,5 +380,9 @@
                 flex-direction: column;
             }
         }
+    }
+
+    .footer{
+        text-align: center;
     }
 }

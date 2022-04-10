@@ -1,23 +1,29 @@
 {% load static %}
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-  {% block title %}
-  Hostel leave entry
-  {% endblock %}
-</title>
-<link rel="stylesheet" href="{% static 'css/navigation/hostel_leave_entry.css' %}">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% block title %} Hostel leave entry {% endblock %}</title>
+<link
+  rel="stylesheet"
+  href="{% static 'css/navigation/hostel_leave_entry.css' %}"
+/>
 
-{% include 'navbar.html' %}
-
-{% block content %}
+{% include 'navbar.html' %} {% block content %}
 <div class="main_body">
+  <div class="lg">
+    <img src="{% static 'images/logo.png' %}" alt="" />
+  </div>
+  <hr>
   <div class="title">
-    <span><img src="{% static 'images/exit.png' %}" alt=""></span> <div class="ti">Hostel Leave Entry</div> 
+    <div class="lb">
+      <span><img src="{% static 'images/exit.png' %}" alt="" /></span>
+      <div class="ti">Hostel Leave Entry</div>
+    </div>
+
     <div class="btns">
-  
-      <a href="{% url 'hostel leave entry form' %}"><button class="cancle">Add Leave</button></a>
+      <a href="{% url 'hostel leave entry form' %}"
+        ><button class="cancle">Add Leave</button></a
+      >
     </div>
   </div>
 
@@ -40,82 +46,52 @@
       </form>
     </div>
   </div> -->
-  
+
   <div class="table">
     <table>
       <tr>
         <th>
-          <div class="t_h">
-            Roll Number
-          </div>
+          <div class="t_h">Roll Number</div>
         </th>
         <th>
-          <div class="t_h">
-            Academic Year
-          </div>
+          <div class="t_h">Academic Year</div>
         </th>
         <th>
-          <div class="t_h">
-            Request Type
-          </div>
+          <div class="t_h">Request Type</div>
         </th>
         <th>
-          <div class="t_h">
-            Out Pass Type
-          </div>
+          <div class="t_h">Out Pass Type</div>
         </th>
         <th>
-          <div class="t_h">
-            Out Pass From
-          </div>
+          <div class="t_h">Out Pass From</div>
         </th>
         <th>
-          <div class="t_h">
-            Out Pass To
-          </div>
+          <div class="t_h">Out Pass To</div>
         </th>
-  
-  
       </tr>
-  
-  
+
       {% for details in form %}
       <tr>
         <td>
-          <div class="s_no">
-            {{details.roll_number}}
-          </div>
+          <div class="s_no">{{details.roll_number}}</div>
         </td>
         <td>
-          <div class="s_no">
-            {{details.academic_year}}
-          </div>
-  
+          <div class="s_no">{{details.academic_year}}</div>
         </td>
         <td>
-          <div class="s_no">
-            {{details.request_type}}
-          </div>
+          <div class="s_no">{{details.request_type}}</div>
         </td>
         <td>
-          <div class="s_no">
-            {{details.out_pass_type}}
-          </div>
+          <div class="s_no">{{details.out_pass_type}}</div>
         </td>
-  
+
         <td>
-          <div class="s_no">
-            {{details.out_pass_from}}
-          </div>
+          <div class="s_no">{{details.out_pass_from}}</div>
         </td>
-  
-  
+
         <td>
-          <div class="s_no">
-            {{details.out_pass_to}}
-          </div>
+          <div class="s_no">{{details.out_pass_to}}</div>
         </td>
-  
       </tr>
       {% endfor %}
       <!-- <tr>
@@ -144,10 +120,7 @@
       </tr>
   
    -->
-  
     </table>
-  
-  
   </div>
 </div>
 

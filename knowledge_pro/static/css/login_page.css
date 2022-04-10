@@ -23,6 +23,7 @@ body .kpro {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 2.2em;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -39,7 +40,7 @@ body .container {
   border-radius: 15px;
   height: 55vh;
   width: 80vw;
-  margin-left: 1em;
+  margin-left: 2.5em;
   background: white;
 }
 
@@ -52,7 +53,7 @@ body .container .logo img {
 
 body .container .uni {
   margin-top: -1em;
-  margin-left: .3em;
+  margin-left: 1em;
   font-size: 1em;
   font-weight: 500;
   color: black;
@@ -175,8 +176,10 @@ body .container .field a:hover {
 body .footer {
   border-radius: 10px;
   border: 2px solid black;
-  padding: .5em;
-  margin-top: 1em;
+  padding: .4em;
+  width: 100%;
+  margin-top: 5em;
+  text-align: center;
   font-size: 15px;
   font-weight: lighter;
 }
@@ -187,12 +190,42 @@ body .footer span {
 }
 
 @media only screen and (min-width: 720px) {
-  .kpro {
-    margin-top: 5em;
-    margin-left: 1em;
+  body {
+    background: url(./presi.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 91%;
+    height: 95vh;
   }
-  .kpro img {
-    margin-left: -58em;
+  body .kpro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .kpro img {
+    width: 25vw;
+  }
+  body .container {
+    width: 25vw;
+  }
+  body .container .logo img {
+    width: 20vw;
+  }
+  body .container .uni {
+    margin-left: 3em;
+    font-size: 1.1em;
+  }
+  body .container .stu {
+    width: 23.7vw;
+  }
+  body .container .wrapper {
+    width: 25vw;
+  }
+  .footer {
+    color: white;
+    border: 2px solid white;
   }
 }
 /*# sourceMappingURL=login_page.css.map */

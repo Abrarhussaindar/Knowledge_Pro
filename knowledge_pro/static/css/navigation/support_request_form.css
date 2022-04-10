@@ -198,6 +198,7 @@
   padding: .5em;
   margin: 1em;
   font-size: 15px;
+  text-align: center;
   font-weight: lighter;
 }
 
@@ -208,23 +209,24 @@
 
 @media only screen and (min-width: 720px) {
   .main_body {
-    margin: 4em .5em;
     border: 2px solid black;
     border-radius: 10px;
-    width: 98.5%;
-    height: 100%;
+    width: 79vw;
+    height: 96vh;
+    margin: 0 10em;
+    margin-top: 4.3em;
   }
   .main_body .lg {
     margin: .1em;
   }
   .main_body .lg img {
     margin-top: .2em;
-    margin-left: 32em;
-    width: 50vh;
-    height: 10vh;
+    margin-left: 20em;
+    width: 70vh;
+    height: 15vh;
   }
   .main_body .atten {
-    margin: 1em 3em;
+    margin: 1em 10em;
     font-size: 1.1em;
     font-weight: 500;
   }
@@ -234,7 +236,7 @@
     height: 3vh;
   }
   .main_body .category {
-    margin-left: 4em;
+    margin-left: 21.5em;
     border: 1px solid black;
     border-radius: 5px;
     border: 2px solid black;
@@ -245,7 +247,7 @@
     width: 50%;
   }
   .main_body .body_container {
-    margin: 1em 3.5em;
+    margin: 1em 24em;
     width: 45vh;
     height: 50vh;
     background: #fff;
@@ -380,6 +382,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .footer {
+    text-align: center;
+    width: 78vw;
+    margin-left: 10.5em;
   }
 }
 /*# sourceMappingURL=support_request_form.css.map */

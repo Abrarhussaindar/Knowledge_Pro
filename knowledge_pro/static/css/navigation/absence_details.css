@@ -297,6 +297,7 @@
   padding: .5em;
   margin: 1em;
   font-size: 15px;
+  text-align: center;
   font-weight: lighter;
 }
 
@@ -307,20 +308,23 @@
 
 @media only screen and (min-width: 720px) {
   .main_body {
-    width: 98.5%;
-    height: 85vh;
+    width: 79vw;
+    height: 96vh;
+    margin: 0 10em;
+    margin-top: 4.3em;
   }
   .main_body .lg {
     margin: -.1em;
   }
   .main_body .lg img {
     margin-top: .2em;
-    margin-left: 33em;
-    width: 50vh;
-    height: 10vh;
+    margin-left: 20em;
+    width: 70vh;
+    margin-bottom: .5em;
+    height: 15vh;
   }
   .main_body .atten {
-    margin: .3em 5em;
+    margin: .3em 2.5em;
     font-size: 1.1em;
     font-weight: 500;
   }
@@ -329,27 +333,35 @@
     width: 3vh;
     height: 3vh;
   }
-  .main_body .table_container {
+  .main_body .tables_con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .main_body .tables_con .table_container {
     border-radius: 10px;
-    margin-left: 5em;
-    margin-top: 2em;
-    width: 58vh;
-    height: 30vh;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 70vh;
     overflow: auto;
   }
-  .main_body .table_container table {
+  .main_body .tables_con .table_container table {
     margin: .6em;
     border: 1px solid black;
     border-radius: 10px;
   }
-  .main_body .table_container table tr th {
-    font-size: 15px;
+  .main_body .tables_con .table_container table tr th {
+    font-size: 17px;
     font-weight: 700;
     border: 1px solid black;
     border-radius: 10px;
     padding: .2em;
   }
-  .main_body .table_container table tr th .t_h {
+  .main_body .tables_con .table_container table tr th .t_h {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -360,12 +372,12 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .table_container table tr td {
+  .main_body .tables_con .table_container table tr td {
     height: 1vh;
     border: 1px solid #817a7a;
     border-radius: 10px;
   }
-  .main_body .table_container table tr td .s_no {
+  .main_body .tables_con .table_container table tr td .s_no {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -376,23 +388,23 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .table_container table tr td .subs_date {
+  .main_body .tables_con .table_container table tr td .subs_date {
     margin: 1em;
-    font-size: 13px;
-  }
-  .main_body .table_container table tr td .subs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     font-size: 15px;
   }
-  .main_body .table_container table tr td .type {
+  .main_body .tables_con .table_container table tr td .subs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 17px;
+  }
+  .main_body .tables_con .table_container table tr td .type {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -403,7 +415,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .table_container table tr td .conducted {
+  .main_body .tables_con .table_container table tr td .conducted {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -414,7 +426,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .table_container table tr td .present {
+  .main_body .tables_con .table_container table tr td .present {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -425,7 +437,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .table_container table tr td .t_h_a {
+  .main_body .tables_con .table_container table tr td .t_h_a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -436,7 +448,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .table_container table tr td .per {
+  .main_body .tables_con .table_container table tr td .per {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -447,29 +459,26 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .another_table {
-    margin-top: -14.6em;
-    margin-left: 40em;
-    border: 1px solid black;
+  .main_body .tables_con .another_table {
     border-radius: 10px;
     width: 75vh;
-    height: 30vh;
+    height: 45vh;
     padding: .5em;
     overflow: auto;
   }
-  .main_body .another_table table {
+  .main_body .tables_con .another_table table {
     margin: .6em;
     border: 1px solid black;
     border-radius: 10px;
   }
-  .main_body .another_table table tr th {
-    font-size: 15px;
+  .main_body .tables_con .another_table table tr th {
+    font-size: 17px;
     font-weight: 700;
     border: 1px solid black;
     border-radius: 10px;
     padding: .2em;
   }
-  .main_body .another_table table tr th .t_h {
+  .main_body .tables_con .another_table table tr th .t_h {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -480,12 +489,12 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .another_table table tr td {
+  .main_body .tables_con .another_table table tr td {
     height: 1vh;
     border: 1px solid #817a7a;
     border-radius: 10px;
   }
-  .main_body .another_table table tr td .s_no {
+  .main_body .tables_con .another_table table tr td .s_no {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -496,23 +505,23 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .another_table table tr td .subs_date {
+  .main_body .tables_con .another_table table tr td .subs_date {
     margin: 1em;
-    font-size: 13px;
-  }
-  .main_body .another_table table tr td .subs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     font-size: 15px;
   }
-  .main_body .another_table table tr td .type {
+  .main_body .tables_con .another_table table tr td .subs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 17px;
+  }
+  .main_body .tables_con .another_table table tr td .type {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -523,7 +532,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .another_table table tr td .conducted {
+  .main_body .tables_con .another_table table tr td .conducted {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -534,7 +543,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .another_table table tr td .present {
+  .main_body .tables_con .another_table table tr td .present {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -545,7 +554,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .another_table table tr td .t_h_a {
+  .main_body .tables_con .another_table table tr td .t_h_a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -556,7 +565,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .main_body .another_table table tr td .per {
+  .main_body .tables_con .another_table table tr td .per {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -566,6 +575,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .footer {
+    width: 78vw;
+    margin-left: -.5em;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=absence_details.css.map */

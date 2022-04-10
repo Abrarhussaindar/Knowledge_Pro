@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .title {
-  margin: 5em 1em;
+  margin: .1em 1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-size: 1.1em;
   font-weight: 500;
 }
@@ -12,13 +15,22 @@
 }
 
 .body_container {
-  margin: -4em 1.3em;
+  margin: 5em 1.3em;
   width: 70vw;
-  height: 80vh;
+  height: 95vh;
   background: #fff;
   padding: 25px 30px;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid red;
+}
+
+.body_container .content {
+  margin-top: 1em;
+  border: 2px solid black;
+  width: 60vw;
+  height: 70vh;
+  border-radius: 10px;
+  padding: 1em;
 }
 
 .body_container .content form .user-details {
@@ -168,7 +180,9 @@
   border-radius: 10px;
   border: 2px solid black;
   padding: .5em;
+  margin-top: 5em;
   font-size: 15px;
+  text-align: center;
 }
 
 .footer span {
@@ -177,24 +191,38 @@
 }
 
 @media only screen and (min-width: 720px) {
-  .title {
-    margin: 5em 6em;
+  .body_container {
+    width: 75vw;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: 0 10em;
+    margin-top: 4.3em;
+    border: 2px solid red;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .body_container .title {
+    margin: 0 6em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     font-size: 1.1em;
     font-weight: 500;
+    margin-bottom: 1em;
   }
-  .title span img {
+  .body_container .title span img {
     vertical-align: -2px;
     width: 3vh;
     height: 3vh;
   }
-  .body_container {
-    margin: -4em 6em;
-    width: 50vh;
-    height: 100vh;
-    background: #fff;
-    padding: 25px 30px;
+  .body_container .content {
+    border: 2px solid black;
+    width: 20vw;
     border-radius: 10px;
-    border: 1px solid black;
+    padding: 1em;
+    margin-left: 6.8em;
+    margin-bottom: .5em;
   }
   .body_container .content form .user-details {
     display: -webkit-box;
@@ -274,7 +302,7 @@
     display: none;
   }
   .body_container form .button {
-    margin-top: 1em;
+    margin-top: 3em;
     height: 45px;
   }
   .body_container form .button input {
@@ -323,6 +351,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .footer {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=hostel_leave_entry_form.css.map */

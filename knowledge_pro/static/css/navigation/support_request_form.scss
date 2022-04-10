@@ -201,6 +201,7 @@
     padding: .5em;
     margin: 1em;
     font-size: 15px;
+    text-align: center;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -215,11 +216,13 @@
 
 @media only screen and (min-width: 720px ){
     .main_body{
-        margin: 4em .5em;
+        // margin: 4em .5em;
         border: 2px solid black;
         border-radius: 10px;
-        width: 98.5%;
-        height: 100%;
+        width: 79vw;
+        height: 96vh;
+        margin: 0 10em;
+        margin-top: 4.3em;
     
         .lg{
             margin: .1em;
@@ -227,9 +230,9 @@
     
             img{
                 margin-top: .2em;
-                margin-left: 32em;
-                width: 50vh;
-                height: 10vh;
+                margin-left: 20em;
+                width: 70vh;
+                height: 15vh;
             }
         }
     
@@ -242,12 +245,13 @@
                     height: 3vh;
                 }
             }
-            margin: 1em 3em;
+            margin: 1em 10em;
             font-size: 1.1em;
             font-weight: 500;
         }
         .category{
-            margin-left: 4em;
+            margin-left: 21.5em;
+            // align-items: center;
             border: 1px solid black;
             border-radius: 5px;
             border: 2px solid black;
@@ -263,7 +267,7 @@
         .body_container {
             //   max-width: 700px;
             //   width: 100%;
-            margin: 1em 3.5em;
+            margin: 1em 24em;
             width: 45vh;
             height: 50vh;
             background: #fff;
@@ -404,5 +408,11 @@
             }
         }
     
+    }
+
+    .footer{
+        text-align: center;
+        width: 78vw;
+        margin-left: 10.5em;
     }
 }

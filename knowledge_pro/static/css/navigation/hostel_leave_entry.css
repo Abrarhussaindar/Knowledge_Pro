@@ -46,8 +46,8 @@
 
 .main_body .lg img {
   margin-top: .2em;
-  margin-left: 3em;
-  width: 50vh;
+  margin-bottom: .5em;
+  width: 45vh;
   height: 10vh;
 }
 
@@ -67,7 +67,9 @@
   border: 1px solid black;
   border-radius: 10px;
   margin: .5em;
-  height: 80vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   padding: .5em;
   overflow: auto;
 }
@@ -203,6 +205,8 @@
   padding: .5em;
   margin: 1em;
   font-size: 15px;
+  text-align: center;
+  text-align: center;
   font-weight: lighter;
 }
 
@@ -213,15 +217,26 @@
 
 @media only screen and (min-width: 720px) {
   .main_body {
-    margin: 4em .5em;
     border: 2px solid black;
     border-radius: 10px;
-    width: 99%;
-    height: 85%;
+    width: 79vw;
+    height: 96vh;
+    margin: 0 10em;
+    margin-top: 4.3em;
+  }
+  .main_body .title {
+    width: 45vw;
+  }
+  .main_body .lb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 12vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .main_body .btns {
-    margin-left: 63em;
-    margin-top: -3em;
     width: 12vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -253,12 +268,19 @@
   }
   .main_body .lg img {
     margin-top: .2em;
-    margin-left: 3em;
-    width: 50vh;
-    height: 10vh;
+    margin-left: 20em;
+    width: 70vh;
+    height: 15vh;
+    margin-bottom: .5em;
   }
   .main_body .title {
-    margin: 1em 19em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1em 15em;
     font-size: 1.1em;
     font-weight: 500;
   }
@@ -270,9 +292,11 @@
   .main_body .table {
     border: 1px solid black;
     border-radius: 10px;
-    margin-left: 20em;
+    margin-left: 16.5em;
     width: 57%;
-    height: 70vh;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     padding: .5em;
     overflow: auto;
   }
@@ -388,6 +412,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .footer {
+    text-align: center;
+    margin-left: 11em;
+    width: 78vw;
   }
 }
 /*# sourceMappingURL=hostel_leave_entry.css.map */

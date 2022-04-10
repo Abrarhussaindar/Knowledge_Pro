@@ -25,7 +25,7 @@ body{
     .kpro{
       display: flex;
       justify-content: center;
-        // margin: 1em;
+        margin: 2.2em;
         // border: 2px solid black;
         width: max-content;
         height: max-content;
@@ -44,7 +44,7 @@ body{
         border-radius: 15px;
         height: 55vh;
         width: 80vw;
-        margin-left: 1em;
+        margin-left: 2.5em;
         // margin-top: -3em;
         background: white;
         // opacity: .6;
@@ -65,7 +65,7 @@ body{
             margin-top: -1em;
             // margin-left: 3.3em;
             // margin-right: 2em;
-            margin-left: .3em;
+            margin-left: 1em;
             // border: 1px solid black;
             font-size: 1em;
             font-weight: 500;
@@ -227,10 +227,13 @@ body{
       // background-color: chartreuse;
       border-radius: 10px;
       border: 2px solid black;
-      padding: .5em;
-      margin-top: 1em;  
-      // margin-top: 5em;
+      padding: .4em;
+      width: 100%;
+      // margin-top: 1em;  
+      margin-top: 5em;
+      text-align: center;
       font-size: 15px;
+      // margin-right: 1em;
       // display: flex;
       // justify-content: center;
       // align-items: center;
@@ -245,11 +248,56 @@ body{
 }
 
 @media only screen and (min-width: 720px ){
-  .kpro{
-    margin-top: 5em;
-    margin-left: 1em;
-    img{
-      margin-left: -58em;
+
+  body{
+    background: url(./presi.jpg ) no-repeat fixed;
+    background-size: cover;
+    // overflow: hidden;
+    width: 91%;
+    // display: grid;
+    // border: 2px solid black;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: red;
+    height: 95vh;
+
+    .kpro{
+      display: flex;
+      // border: 2px solid white;
+      // margin-left: 33em;
+      align-items: center;
+      img{
+        width: 25vw;
+      }
     }
+
+    .container{
+      width: 25vw;
+      // height: 20vh;
+
+      .logo{
+        img{
+          width: 20vw;
+        }
+      }
+
+      .uni{
+        margin-left: 3em;
+        // margin-top: .01em;
+        font-size: 1.1em;
+      }
+      .stu{
+        width: 23.7vw;
+      }
+
+      .wrapper{
+        width: 25vw;
+      }
+    }
+  }
+
+  .footer{
+    color: white;
+    border: 2px solid white;
   }
 }

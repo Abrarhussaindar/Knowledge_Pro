@@ -277,6 +277,7 @@
   padding: .5em;
   margin: 1em;
   font-size: 15px;
+  text-align: center;
   font-weight: lighter;
 }
 
@@ -287,23 +288,25 @@
 
 @media only screen and (min-width: 720px) {
   .main_body {
-    margin: 4em .5em;
     border: 2px solid black;
     border-radius: 10px;
-    width: 99%;
-    height: 95%;
+    width: 79vw;
+    height: 96vh;
+    margin: 0 10em;
+    margin-top: 4.3em;
   }
   .main_body .lg {
     margin: .1em;
   }
   .main_body .lg img {
     margin-top: .2em;
-    margin-left: 33em;
-    width: 50vh;
-    height: 10vh;
+    margin-left: 20em;
+    margin-bottom: .5em;
+    width: 70vh;
+    height: 15vh;
   }
   .main_body .atten {
-    margin: .5em 12em;
+    margin: .5em 11em;
     font-size: 1.1em;
     font-weight: 500;
   }
@@ -313,13 +316,13 @@
     height: 3vh;
   }
   .main_body .table_container {
-    border: 1px solid black;
     border-radius: 10px;
     margin-left: 12em;
-    width: 73%;
-    height: 75%;
+    width: 50vw;
+    height: 65vh;
     padding: .5em;
     overflow: auto;
+    border: none;
   }
   .main_body .table_container table {
     margin: -.2em;
@@ -436,7 +439,7 @@
   }
   .main_body .table_container .another_table {
     margin-top: 2em;
-    margin-left: 20em;
+    margin-left: 10em;
   }
   .main_body .table_container .another_table table tr td .img {
     display: -webkit-box;
@@ -529,6 +532,11 @@
   }
   .main_body .table_container .btns .cancle:hover {
     background-color: #135699;
+  }
+  .footer {
+    text-align: center;
+    width: 79vw;
+    margin-left: 10em;
   }
 }
 /*# sourceMappingURL=fee_payment_history.css.map */

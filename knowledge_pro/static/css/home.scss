@@ -22,12 +22,12 @@
     border: 2px solid black;
     margin: .5em;
     margin-top: 4.3em;
-    height: 90vh;
+    height: 92vh;
     // width: 100vw;
 
     .logo {
         img {
-            margin: .2em .1em;
+            margin: .5em 1.2em;
             width: 42vh;
             border-radius: 10px;
         }
@@ -38,17 +38,17 @@
         margin: .5em;
         height: 25vh;
         display: flex;
-
-        // border: 2px solid black;
+        justify-content: space-between;
+        border: 2px solid black;
         .img {
             // background-color: var(--bg);
             // border: 2px solid black;
             border-radius: 15px;
             padding: 5px;
-            margin: 5px;
+            // margin: 5px;
             margin-top: 2em;
             width: 15vh;
-            height: 20vh;
+            height: 15vh;
             cursor: pointer;
             // position: absolute;
 
@@ -65,10 +65,10 @@
             border-radius: 10px;
             padding: 10px;
             margin: 5px;
-            margin-left: 1em;
+            // margin-right: 10em;
             top: 1px;
             height: 20vh;
-            width: 60vw;
+            width: 65vw;
 
             table {
                 td {
@@ -115,7 +115,7 @@
             // display: flex;
             // justify-content: center;
             // align-items: center;
-            margin: .5em 2.5em;
+            margin: .5em 5em;
             width: 25vh;
             height: 25vh;
         }
@@ -128,6 +128,7 @@
         padding: .5em;
         margin: 1em;
         font-size: 15px;
+        text-align: center;
         // display: flex;
         // justify-content: center;
         // align-items: center;
@@ -148,10 +149,10 @@
     .main {
 
         // border-radius: 10px;
-        border: 5px solid black;
+        border: 2px solid black;
         // background-color: red;
-        // margin: .5em;
-        // margin-top: 4.3em;
+        margin: 0 10em;
+        margin-top: 4.3em;
         // height: 85vh;
 
         .logo {
@@ -178,17 +179,17 @@
                 // background-color: var(--bg);
                 // border: 2px solid black;
                 border-radius: 15px;
-                padding: 5px;
+                // padding: 5px;
                 margin: 5px;
-                width: 20vh;
-                height: 20vh;
+                width: 25vh;
+                height: 25vh;
                 cursor: pointer;
                 // position: absolute;
 
 
                 img {
-                    width: 20vh;
-                    height: 20vh;
+                    width: 22vh;
+                    height: 22vh;
                     border-radius: 50%;
                 }
             }

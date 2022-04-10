@@ -138,6 +138,7 @@
     padding: .5em;
     margin: 1em;
     font-size: 15px;
+    text-align: center;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -208,7 +209,7 @@
             border-radius: 10px;
             margin: .5em;
             // width: 90vh;
-            height: 75%;
+            height: 42vw;
             padding: .5em;
             overflow: auto;
             // display: inline-grid;
@@ -301,4 +302,8 @@
             }
         }
     }
+
+}
+.footer{
+    text-align: center;
 }

@@ -82,6 +82,7 @@
   background: #ffa000;
   color: white;
   padding: .5em;
+  text-align: center;
   font-size: 13px;
 }
 
@@ -338,6 +339,7 @@
   margin: 1em;
   font-size: 15px;
   font-weight: lighter;
+  text-align: center;
 }
 
 .footer span {
@@ -347,23 +349,24 @@
 
 @media only screen and (min-width: 720px) {
   .main_body {
-    margin: 4em .5em;
     border: 2px solid black;
     border-radius: 10px;
-    width: 98.5%;
-    height: 100%;
+    width: 79vw;
+    height: 96vh;
+    margin: 0 10em;
+    margin-top: 4.3em;
   }
   .main_body .lg {
     margin: .1em;
   }
   .main_body .lg img {
     margin-top: .2em;
-    margin-left: 32em;
-    width: 50vh;
-    height: 10vh;
+    margin-left: 20em;
+    width: 70vh;
+    height: 15vh;
+    margin-bottom: .5em;
   }
   .main_body .btns {
-    margin-left: 76.5em;
     margin-bottom: 1em;
     margin-top: -3em;
     width: 16vh;
@@ -428,9 +431,11 @@
   .main_body .table {
     border: 1px solid black;
     border-radius: 10px;
-    margin-left: 16em;
+    margin-left: 14em;
     width: 62%;
-    height: 60vh;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     padding: .5em;
     overflow: auto;
   }
@@ -641,6 +646,11 @@
   }
   .main_body .table .btns .cancle:hover {
     background-color: #135699;
+  }
+  .footer {
+    text-align: center;
+    width: 78vw;
+    margin-left: 10.5em;
   }
 }
 /*# sourceMappingURL=support.css.map */
