@@ -1,0 +1,511 @@
+{% load static %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    {% block title %}
+    Time Table
+    {% endblock %}
+</title>
+<link rel="stylesheet" href="{% static 'css/navigation/time_table.css' %}">
+
+{% include 'navbar.html' %}
+{% block content %}
+
+<div class="main_body">
+    <div class="lg">
+        <img src="{% static 'images/logo.png' %}" alt="">
+    </div>
+    <hr>
+    <div class="atten">
+        <span><img src="{% static 'images/calendar-with-check-mark.png' %}" alt=""></span> Time Table
+    </div>
+    <div class="table_container">
+        <table>
+            <tr>
+                <th>
+                    <div class="t_h">
+                        Day
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Period 1
+                    </div>
+                    <div class="t_h">
+                        (08:45-09:35)
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Period 2
+                    </div>
+                    <div class="t_h">
+                        (09:40-10:30)
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Period 3
+                    </div>
+                    <div class="t_h">
+                        (10:40-11:30)
+                    </div>
+                </th>
+
+                <th>
+                    <div class="t_h">
+                        Period 4
+                    </div>
+                    <div class="t_h">
+                        (11:35-12:25)
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Period 5
+                    </div>
+                    <div class="t_h">
+                        (13:05-13:55)
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Period 6
+                    </div>
+                    <div class="t_h">
+                        (14:00-14:50)
+                    </div>
+                </th>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Monday
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        Analysis of Algorithms
+                    </div>
+                    <div class="subs_date">
+                        (CSE 212)
+                    </div>
+
+                </td>
+                <td>
+                    <div class="subs_date">
+                        Principles of Artificial Intelligence
+                    </div>
+                    <div class="subs_date">
+                        (CSE 228)
+                    </div>
+                </td>
+
+                <td>
+                    <div class="subs_date">
+                        Engineering Economics
+                    </div>
+                    <div class="subs_date">
+                        (MGT 112)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        <!-- {{attens.present}} -->
+                    </div>
+                    <div class="subs_date">
+                        <!-- CSE212 -->
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Computer Networks
+                    </div>
+                    <div class="subs_date">
+                        (CSE 211)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        Operating Systems
+                    </div>
+                    <div class="subs_date">
+                        (CSE 210)
+                    </div>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Tuesday
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Analysis of Algorithms Lab
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 255)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Analysis of Algorithms Lab
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 255)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Software Engineering and Project Management
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 227)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Analysis of Algorithms
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 212)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Wednesday
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Computer Networks
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 211)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Software Engineering and Project Management
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 227)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Principles of Artificial Intelligence
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 228)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Engineering Economics
+                    </div>
+                    <div class="subs_date">
+                        (MGT 112)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Analysis of Algorithms
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 212)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Operating Systems
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 210)
+                    </div>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Thursday
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Engineering Economics
+                    </div>
+                    <div class="subs_date">
+
+                        (MGT 112)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Operating Systems
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 210)
+                    </div>
+                </td>
+
+                <td>
+                    <div class="subs_date">
+
+
+                        Software Engineering and Project Management
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 227)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Computer Networks
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 211)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Principles of Artificial Intelligence
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 228)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+
+
+
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Friday
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Parallel Computing
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 305)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        Parallel Computing
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 305)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Saturday
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Parallel Computing
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 305)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        <!-- Parallel Computing -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 305 -->
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+
+                        Parallel Computing
+                    </div>
+                    <div class="subs_date">
+
+                        (CSE 305)
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+
+                        <!-- Analysis of Algorithms Lab -->
+                    </div>
+                    <div class="subs_date">
+
+                        <!-- CSE 255 -->
+                    </div>
+                </td>
+
+            </tr>
+
+        </table>
+
+
+    </div>
+
+</div>
+<div class="footer">
+    &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,307 @@
+{% load static %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    {% block title %}
+Fee payment
+    {% endblock %}
+</title>
+<link rel="stylesheet" href="{% static 'css/navigation/fee_payment.css' %}">
+
+{% include 'navbar.html' %}
+{% block content %}
+
+<div class="main_body">
+    <div class="lg">
+        <img src="{% static 'images/logo.png' %}" alt="">
+    </div>
+    <hr>
+    <div class="atten">
+        <span><img src="{% static 'images/money.png' %}" alt=""></span> Fee Payment
+    </div>
+    <div class="table_container">
+        <table>
+            <!-- <tr>
+                <th>
+                    <div class="t_h">
+                        S.No
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Couser Name
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Download
+                    </div>
+                </th>
+                
+                <th>
+                    <div class="t_h">
+                        Download
+                    </div>
+                </th>
+
+                
+            </tr> -->
+
+            <!-- {% for sub in subs %}
+            <tr>
+                <td>
+                    <div class="s_no">
+                        {{sub.id}}
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        {{sub.sub_name}}
+                    </div>
+                    <div class="subs_date">
+                        (CSE 212)
+                    </div>
+
+                </td>
+                <td>
+                    <div class="subs_date">
+                    </div>
+                </td>
+
+
+
+            </tr>
+            {% endfor %} -->
+            {% for st in stu %}
+            <tr>
+                <td>
+                    <div class="s_no">
+                    Application No.
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        {{st.application_number}}  
+                    </div>
+
+                </td>
+                <td>
+                    <div class="s_no">
+                        Student Name
+                    </div>
+                </td>
+
+                <td>
+                    <div class="subs_date">
+                        {{st.first_name}} {{st.middle_name}} {{st.last_name}}
+                    </div>
+                </td>
+
+
+
+            </tr>
+            {% endfor %}
+            {% for st in stu %}
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Course
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        {{st.course}}
+                    </div>
+
+
+                </td>
+                <td>
+                    <div class="s_no">
+                        Admitted Through
+                    </div>
+                </td>
+
+                <td>
+                    <div class="subs_date">
+                        {{st.admitted_through}}
+                    </div>
+                </td>
+
+
+
+            </tr>
+            {% endfor %}
+            {% for st in stu %}
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Class
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        {{st.section}}
+                    </div>
+
+                </td>
+                <td>
+                    <div class="s_no">
+                        Applied Year
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        {{st.applied_year}}
+                    </div>
+                </td>
+
+
+
+            </tr>
+            {% endfor %}
+            {% for st in stu %}
+            <tr>
+                <td>
+                    <div class="s_no">
+                        Registration No.
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        {{st.roll_number}}
+                    </div>
+
+                </td>
+                <td>
+                    <div class="s_no">
+                        UID
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        {{st.uid}}
+                    </div>
+                </td>
+
+
+
+            </tr>            
+            {% endfor %}
+        </table>
+
+        {% comment %} <hr> {% endcomment %}
+        <div class="another_table">
+            <table>
+                <tr>
+                    <th>
+                        <div class="t_h">
+                            Year
+                        </div>
+                    </th>
+                    <th>
+                        <div class="t_h">
+                            Total Amount
+                        </div>
+                    </th>
+                    <th>
+                        <div class="t_h">
+                            Paid Amount
+                        </div>
+                    </th>
+                    
+                    <th>
+                        <div class="t_h">
+                            Balance
+                        </div>
+                    </th>
+    
+                    
+                </tr>
+    
+                
+                {% for fee in fees %}
+                <tr>
+                    <td>
+                        <div class="s_no">
+                            {{fee.year}}
+                        </div>
+                    </td>
+                    <td>
+                        <div class="s_no">
+                            {{fee.total_amount}}  
+                        </div>
+    
+                    </td>
+                    <td>
+                        <div class="s_no">
+                            {{fee.paid_amount}} 
+                        </div>
+                    </td>
+    
+                    <td>
+                        <div class="subs_date">
+                            {{fee.balance}}
+                        </div>
+                    </td>
+    
+    
+    
+                </tr>
+                {% endfor %}
+                {% for fee in fees %}
+                <tr>
+                    <td>
+                        <div class="b_t_p">
+                            Balance To Pay
+                        </div>
+                    </td>
+                    <td>
+                        <div class="subs_date">
+                            <!-- <input type="text" value="10000"> -->
+                        </div>
+    
+    
+                    </td>
+                    <td>
+                        <div class="subs_date">
+                            <!-- <input type="text" value="10000"> -->
+                        </div>
+    
+    
+                    </td>
+                    <td>
+                        <div class="subs_date">
+                            <input type="text" value={{fee.balance}}>
+                        </div>
+    
+    
+                    </td>
+                    <td>
+                        <div class="v_d_btn">
+                            <a href="#"><button>View Details</button></a>
+                        </div>
+                    </td>
+
+                </tr>
+                {% endfor %}
+                
+                
+            </table>
+            <div class="btns">
+                 <a href="#"><button class="conti">Continue</button></a>
+                <a href="{% url 'home' %}"><button class="cancle">Cancel</button></a>
+            </div>
+            
+        </div>
+
+
+    </div>
+    
+</div>
+
+<div class="footer">
+    &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+</div>
+
+{% endblock %}

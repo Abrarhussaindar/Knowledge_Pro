@@ -1,0 +1,130 @@
+{% load static %}
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% block title %} Hostel leave entry {% endblock %}</title>
+<link
+  rel="stylesheet"
+  href="{% static 'css/navigation/hostel_leave_entry.css' %}"
+/>
+
+{% include 'navbar.html' %} {% block content %}
+<div class="main_body">
+  <div class="lg">
+    <img src="{% static 'images/logo.png' %}" alt="" />
+  </div>
+  <hr>
+  <div class="title">
+    <div class="lb">
+      <span><img src="{% static 'images/exit.png' %}" alt="" /></span>
+      <div class="ti">Hostel Leave Entry</div>
+    </div>
+
+    <div class="btns">
+      <a href="{% url 'hostel leave entry form' %}"
+        ><button class="cancle">Add Leave</button></a
+      >
+    </div>
+  </div>
+
+  <!-- <div class="body_container">
+  
+    <div class="content">
+      <form method="POST">
+        {% csrf_token %}
+        <div class="user-details">
+          <div class="input-box">
+            {% for field in form %}
+            <span class="details">{{ field.label }}</span>
+            {{ field }}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+  <div class="table">
+    <table>
+      <tr>
+        <th>
+          <div class="t_h">Roll Number</div>
+        </th>
+        <th>
+          <div class="t_h">Academic Year</div>
+        </th>
+        <th>
+          <div class="t_h">Request Type</div>
+        </th>
+        <th>
+          <div class="t_h">Out Pass Type</div>
+        </th>
+        <th>
+          <div class="t_h">Out Pass From</div>
+        </th>
+        <th>
+          <div class="t_h">Out Pass To</div>
+        </th>
+      </tr>
+
+      {% for details in form %}
+      <tr>
+        <td>
+          <div class="s_no">{{details.roll_number}}</div>
+        </td>
+        <td>
+          <div class="s_no">{{details.academic_year}}</div>
+        </td>
+        <td>
+          <div class="s_no">{{details.request_type}}</div>
+        </td>
+        <td>
+          <div class="s_no">{{details.out_pass_type}}</div>
+        </td>
+
+        <td>
+          <div class="s_no">{{details.out_pass_from}}</div>
+        </td>
+
+        <td>
+          <div class="s_no">{{details.out_pass_to}}</div>
+        </td>
+      </tr>
+      {% endfor %}
+      <!-- <tr>
+        <td>
+          <div class="s_no">
+            Total:
+          </div>
+        </td>
+        <td>
+          <div class="s_no">
+  
+          </div>
+  
+        </td>
+        <td>
+          <div class="s_no">
+            {{total}}
+          </div>
+        </td>
+  
+        <td>
+          <div class="subs_date">
+  
+          </div>
+        </td>
+      </tr>
+  
+   -->
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+</div>
+{% endblock %}

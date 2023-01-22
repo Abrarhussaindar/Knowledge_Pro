@@ -1,0 +1,542 @@
+.main_body {
+  margin: 4.5em 1em;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 90vw;
+  height: 95vh;
+}
+
+.main_body .lg {
+  margin: .1em;
+}
+
+.main_body .lg img {
+  margin-top: .2em;
+  width: 90vw;
+  height: 8vh;
+  border-radius: 10px;
+}
+
+.main_body .atten {
+  margin: 1em 1em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.main_body .atten span img {
+  vertical-align: -2px;
+  width: 3vh;
+  height: 3vh;
+}
+
+.main_body .table_container {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: .5em;
+  height: 75%;
+  padding: .5em;
+  overflow: auto;
+}
+
+.main_body .table_container table {
+  margin: -.2em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.main_body .table_container table tr th {
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid black;
+  padding: .2em;
+  border-radius: 10px;
+}
+
+.main_body .table_container table tr th .t_h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_body .table_container table tr td {
+  height: 6vh;
+  border: 1px solid #817a7a;
+  border-radius: 10px;
+}
+
+.main_body .table_container table tr td .s_no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: lighter;
+  margin: 1em;
+}
+
+.main_body .table_container table tr td .subs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+
+.main_body .table_container table tr td .subs_date {
+  margin: 1em;
+  font-weight: 500;
+}
+
+.main_body .table_container table tr td .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_body .table_container table tr td .conducted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_body .table_container table tr td .present {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_body .table_container table tr td .t_h_a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_body .table_container table tr td .per {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_body .table_container .another_table {
+  margin-top: 2em;
+}
+
+.main_body .table_container .another_table table tr td .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_body .table_container .another_table table tr td .img img {
+  width: 3vh;
+  height: 3vh;
+}
+
+.main_body .table_container .another_table table tr td .b_t_p {
+  font-weight: 600;
+  margin: 1em;
+  font-size: 12px;
+}
+
+.main_body .table_container .another_table table tr td input {
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.main_body .table_container .another_table table tr td .v_d_btn {
+  margin: 1em;
+}
+
+.main_body .table_container .another_table table tr td .v_d_btn button {
+  border-radius: 6px;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.main_body .table_container .another_table table tr td .v_d_btn button:hover {
+  background-color: #368636;
+}
+
+.main_body .table_container .btns {
+  margin-left: 10em;
+  margin-top: 1.5em;
+  width: 28vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_body .table_container .btns .conti {
+  border-radius: 6px;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.main_body .table_container .btns .conti:hover {
+  background-color: #368636;
+}
+
+.main_body .table_container .btns .cancle {
+  border-radius: 6px;
+  color: #fff;
+  background-color: #237dd6;
+  border-color: #237dd6;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.main_body .table_container .btns .cancle:hover {
+  background-color: #135699;
+}
+
+.footer {
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: .5em;
+  margin: 1em;
+  font-size: 15px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.footer span {
+  font-weight: 400;
+  color: #000000;
+}
+
+@media only screen and (min-width: 720px) {
+  .main_body {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 79vw;
+    height: 96vh;
+    margin: 0 10em;
+    margin-top: 4.3em;
+  }
+  .main_body .lg {
+    margin: .1em;
+  }
+  .main_body .lg img {
+    margin-top: .2em;
+    margin-left: 20em;
+    margin-bottom: .5em;
+    width: 70vh;
+    height: 15vh;
+  }
+  .main_body .atten {
+    margin: .5em 11em;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  .main_body .atten span img {
+    vertical-align: -2px;
+    width: 3vh;
+    height: 3vh;
+  }
+  .main_body .table_container {
+    border-radius: 10px;
+    margin-left: 12em;
+    width: 50vw;
+    height: 65vh;
+    padding: .5em;
+    overflow: auto;
+    border: none;
+  }
+  .main_body .table_container table {
+    margin: -.2em;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .main_body .table_container table tr th {
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid black;
+    padding: .2em;
+    border-radius: 10px;
+  }
+  .main_body .table_container table tr th .t_h {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_body .table_container table tr td {
+    height: 6vh;
+    border: 1px solid #817a7a;
+    border-radius: 10px;
+  }
+  .main_body .table_container table tr td .s_no {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 1em;
+  }
+  .main_body .table_container table tr td .subs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 15px;
+  }
+  .main_body .table_container table tr td .subs_date {
+    margin: 1em;
+    font-weight: 500;
+  }
+  .main_body .table_container table tr td .type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_body .table_container table tr td .conducted {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_body .table_container table tr td .present {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_body .table_container table tr td .t_h_a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_body .table_container table tr td .per {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_body .table_container .another_table {
+    margin-top: 2em;
+    margin-left: 10em;
+  }
+  .main_body .table_container .another_table table tr td .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_body .table_container .another_table table tr td .img img {
+    width: 3vh;
+    height: 3vh;
+  }
+  .main_body .table_container .another_table table tr td .b_t_p {
+    font-weight: 600;
+    margin: 1em;
+    font-size: 12px;
+  }
+  .main_body .table_container .another_table table tr td input {
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  .main_body .table_container .another_table table tr td .v_d_btn {
+    margin: 1em;
+  }
+  .main_body .table_container .another_table table tr td .v_d_btn button {
+    border-radius: 6px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  .main_body .table_container .another_table table tr td .v_d_btn button:hover {
+    background-color: #368636;
+  }
+  .main_body .table_container .btns {
+    margin-left: 9em;
+    margin-top: 1.5em;
+    width: 28vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main_body .table_container .btns .conti {
+    border-radius: 6px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  .main_body .table_container .btns .conti:hover {
+    background-color: #368636;
+  }
+  .main_body .table_container .btns .cancle {
+    border-radius: 6px;
+    color: #fff;
+    background-color: #237dd6;
+    border-color: #237dd6;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  .main_body .table_container .btns .cancle:hover {
+    background-color: #135699;
+  }
+  .footer {
+    text-align: center;
+    width: 79vw;
+    margin-left: 10em;
+  }
+}
+/*# sourceMappingURL=fee_payment_history.css.map */

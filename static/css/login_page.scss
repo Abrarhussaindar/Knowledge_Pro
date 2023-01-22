@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root{
+    --bg: #258bf1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    // background-color: red;
+    // overflow: hidden;
+}
+
+body{
+    background: url(./presi.jpg ) no-repeat fixed;
+    background-size: cover;
+    // overflow: hidden;
+    width: 91%;
+    // display: grid;
+    // border: 2px solid black;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: red;
+    height: 100vh;
+    .kpro{
+      display: flex;
+      justify-content: center;
+        margin: 2.2em;
+        // border: 2px solid black;
+        width: max-content;
+        height: max-content;
+        img{
+          width: 80vw;
+        }
+        // width: max-content;
+        // height: max-content;
+        // margin-left: 2.5em;
+        
+    }
+    .container{
+      // display: flex;
+      // justify-content: center;
+        // border: 2px solid black;
+        border-radius: 15px;
+        height: 55vh;
+        width: 80vw;
+        margin-left: 2.5em;
+        // margin-top: -3em;
+        background: white;
+        // opacity: .6;
+
+    
+        .logo{
+            img{
+                border-radius: 5px;
+                margin: .5em 2.5em;
+                width: 60vw;
+                height: 10vh;
+                // border: 1px solid black;
+                // opacity: 1;
+            }
+        }
+
+        .uni{
+            margin-top: -1em;
+            // margin-left: 3.3em;
+            // margin-right: 2em;
+            margin-left: 1em;
+            // border: 1px solid black;
+            font-size: 1em;
+            font-weight: 500;
+            color: black;
+        }
+
+        .stu{
+            font-size: 1.2em;
+            // border: 1px solid black;
+            margin-top: -.01em;
+            margin-left: -.01em;
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            // line-height: 100px;
+            color: #fff;
+            user-select: none;
+            padding: .5em;
+            width: 74.5vw;
+            border-radius: 12px 12px 0 0;
+            background: linear-gradient(-135deg, #c850c0, #4158d0);
+            // background: linear-gradient(-135deg, #c850c0, #4158d0);
+        }
+        .wrapper{
+          // display: flex;
+          // border: 2px solid black;
+            // width: 30px;
+            background: #fff;
+            border-radius: 15px;
+            height: 35vh;
+            width: 80vw;
+            box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+          }
+
+          .wrapper form{
+            padding: 10px 30px 50px 30px;
+          }
+          .wrapper form .field{
+            height: 50px;
+            width: 100%;
+            margin-top: 20px;
+            position: relative;
+          }
+          .wrapper form .field input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            font-size: 17px;
+            padding-left: 20px;
+            border: 1px solid lightgrey;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+          }
+          .wrapper form .field input:focus,
+          form .field input:valid{
+            border-color: #4158d0;
+          }
+          .wrapper form .field label{
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            color: #999999;
+            font-weight: 400;
+            font-size: 17px;
+            pointer-events: none;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+          }
+          form .field input:focus ~ label,
+          form .field input:valid ~ label{
+            top: 0%;
+            font-size: 16px;
+            color: #4158d0;
+            background: #fff;
+            transform: translateY(-50%);
+          }
+        //   form .content{
+        //     display: flex;
+        //     width: 100%;
+        //     height: 50px;
+        //     font-size: 16px;
+        //     align-items: center;
+        //     justify-content: space-around;
+        //   }
+        //   form .content .checkbox{
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //   }
+        //   form .content input{
+        //     width: 15px;
+        //     height: 15px;
+        //     background: red;
+        //   }
+        //   form .content label{
+        //     color: #262626;
+        //     user-select: none;
+        //     padding-left: 5px;
+        //   }
+        //   form .content .pass-link{
+        //     color: "";
+        //   }
+          form .field input[type="submit"]{
+            color: #fff;
+            border: none;
+            padding-left: 0;
+            margin-top: -10px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            background: linear-gradient(-135deg, #c850c0, #4158d0);
+            transition: all 0.3s ease;
+          }
+          form .field input[type="submit"]:active{
+            transform: scale(0.95);
+          }
+
+          .field{
+            
+            a{
+              // margin-top: 1em;
+              // margin-left: 1em;
+              border: 2px solid #c850c0;
+              border-radius: 50px;
+              padding: .5em;
+              text-decoration: none;
+              color: black;
+              font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+
+              &:hover{
+                color: white;
+                // border: 2px solid #4158d0;
+                background: linear-gradient(-135deg, #c850c0, #4158d0);
+              }
+            }
+          } 
+        //   form .signup-link{
+        //     color: #262626;
+        //     margin-top: 20px;
+        //     text-align: center;
+        //   }
+        //   form .pass-link a,
+        //   form .signup-link a{
+        //     color: #4158d0;
+        //     text-decoration: none;
+        //   }
+        //   form .pass-link a:hover,
+        //   form .signup-link a:hover{
+        //     text-decoration: underline;
+        //   }
+
+
+    }
+
+    .footer {
+      // background-color: chartreuse;
+      border-radius: 10px;
+      border: 2px solid black;
+      padding: .4em;
+      width: 100%;
+      // margin-top: 1em;  
+      margin-top: 5em;
+      text-align: center;
+      font-size: 15px;
+      // margin-right: 1em;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      font-weight: lighter;
+  
+      span {
+          font-weight: 400;
+          color: #000000;
+      }
+  
+  }
+}
+
+@media only screen and (min-width: 720px ){
+
+  body{
+    background: url(./presi.jpg ) no-repeat fixed;
+    background-size: cover;
+    // overflow: hidden;
+    width: 91%;
+    // display: grid;
+    // border: 2px solid black;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: red;
+    height: 95vh;
+
+    .kpro{
+      display: flex;
+      // border: 2px solid white;
+      // margin-left: 33em;
+      align-items: center;
+      img{
+        width: 25vw;
+      }
+    }
+
+    .container{
+      width: 25vw;
+      // height: 20vh;
+
+      .logo{
+        img{
+          width: 20vw;
+        }
+      }
+
+      .uni{
+        margin-left: 3em;
+        // margin-top: .01em;
+        font-size: 1.1em;
+      }
+      .stu{
+        width: 23.7vw;
+      }
+
+      .wrapper{
+        width: 25vw;
+      }
+    }
+  }
+
+  .footer{
+    color: white;
+    border: 2px solid white;
+  }
+}

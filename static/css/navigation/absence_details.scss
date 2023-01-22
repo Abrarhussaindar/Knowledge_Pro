@@ -1,0 +1,534 @@
+.main_body {
+    margin: 4.5em 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    // background-color: red;
+    width: 90vw;
+    height: 110vh;
+
+    .lg {
+        margin: .1em;
+        // border: 1px solid black;
+
+        img {
+            margin-top: .2em;
+            // margin-left: 3em;
+            width: 90vw;
+            height: 8vh;
+            border-radius: 10px;
+        }
+    }
+
+    .atten {
+        span {
+
+            // border: 1px solid black;
+            img {
+                vertical-align: -2px;
+                width: 3vh;
+                height: 3vh;
+            }
+        }
+
+        margin: 1em 1em;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+    .table_container {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: .5em;
+        // width: 90vh;
+        height: 40vh;
+        padding: .5em;
+        overflow: auto;
+
+
+        table {
+            margin: .6em;
+            // padding: -5em;
+            border: 1px solid black;
+            border-radius: 10px;
+
+            // border-top: 5px solid black;
+            tr {
+                // border: 1px solid black;
+
+                th {
+                    font-size: 15px;
+                    font-weight: 700;
+                    // margin-top: 1em;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    padding: .2em;
+
+
+                    .t_h {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                td {
+                    height: 1vh;
+                    // font-size: 20px;
+                    border: 1px solid rgb(129, 122, 122);
+                    border-radius: 10px;
+
+                    .s_no {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .subs_date {
+                        margin: 1em;
+                        font-size: 13px;
+                    }
+
+                    .subs {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                    }
+
+
+                    .type {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .conducted {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .present {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .t_h_a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .per {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .another_table {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: .5em;
+        // width: 90vh;
+        height: 40vh;
+        padding: .5em;
+        overflow: auto;
+
+
+        table {
+            margin: .6em;
+            // padding: -5em;
+            border: 1px solid black;
+            border-radius: 10px;
+
+            // border-top: 5px solid black;
+            tr {
+                // border: 1px solid black;
+
+                th {
+                    font-size: 15px;
+                    font-weight: 700;
+                    // margin-top: 1em;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    padding: .2em;
+
+
+                    .t_h {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                td {
+                    height: 1vh;
+                    // font-size: 20px;
+                    border: 1px solid rgb(129, 122, 122);
+                    border-radius: 10px;
+
+                    .s_no {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .subs_date {
+                        margin: 1em;
+                        font-size: 13px;
+                    }
+
+                    .subs {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                    }
+
+
+                    .type {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .conducted {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .present {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .t_h_a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .per {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+.footer {
+    // background-color: chartreuse;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: .5em;
+    margin: 1em;
+    font-size: 15px;
+    text-align: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-weight: lighter;
+
+    span {
+        font-weight: 400;
+        color: #000000;
+    }
+
+}
+
+// .footer{
+//     // background-color: chartreuse;
+//     border-radius: 10px;
+//     // border: 2px solid black;
+//     margin: -3.5em 2em;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-weight: lighter;
+
+//     span{
+//         font-weight: 400;
+//         color: #000000;
+//     }
+
+// }
+
+@media only screen and (min-width: 720px) {
+    .main_body {
+        // margin: 4em .5em;
+        // border: 2px solid black;
+        // border-radius: 10px;
+        // background-color: red;
+        // width: 62vh;
+        // height: 110vh;
+        width: 79vw;
+        height: 96vh;
+        margin: 0 10em;
+        margin-top: 4.3em;
+
+        .lg {
+            margin: -.1em;
+            // border: 1px solid black;
+
+            img {
+                margin-top: .2em;
+                margin-left: 20em;
+                width: 70vh;
+                margin-bottom: .5em;
+                height: 15vh;
+            }
+        }
+
+        .atten {
+            // margin-left: -1em;
+            span {
+
+                // border: 1px solid black;
+                img {
+                    vertical-align: -2px;
+                    width: 3vh;
+                    height: 3vh;
+                }
+            }
+
+            margin: .3em 2.5em;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .tables_con{
+            display: flex;
+            justify-content: space-evenly;
+            .table_container {
+                // border: 1px solid red;
+                border-radius: 10px;
+                // margin-left: 5em;
+                // margin-top: 2em;
+                width: max-content;
+                height: 70vh;
+                // padding: .5em;
+                overflow: auto;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+    
+                table {
+                    margin: .6em;
+                    // padding: -5em;
+                    border: 1px solid black;
+                    border-radius: 10px;
+    
+                    // border-top: 5px solid black;
+                    tr {
+                        // border: 1px solid black;
+    
+                        th {
+                            font-size: 17px;
+                            font-weight: 700;
+                            // margin-top: 1em;
+                            border: 1px solid black;
+                            border-radius: 10px;
+                            padding: .2em;
+    
+    
+                            .t_h {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+    
+                        td {
+                            height: 1vh;
+                            // font-size: 20px;
+                            border: 1px solid rgb(129, 122, 122);
+                            border-radius: 10px;
+    
+                            .s_no {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+                            .subs_date {
+                                margin: 1em;
+                                font-size: 15px;
+                            }
+    
+                            .subs {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 17px;
+                            }
+    
+    
+                            .type {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+    
+                            .conducted {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+    
+                            .present {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+    
+                            .t_h_a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+    
+                            .per {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .another_table {
+                // margin-top: -14.6em;
+                // margin-left: 40em;
+                // border: 1px solid blue;
+                border-radius: 10px;
+                // margin: .5em;
+                width: 75vh;
+                height: 45vh;
+                padding: .5em;
+                overflow: auto;
+                // background-color: red;
+    
+    
+                table {
+                    // background-color: red;
+                    margin: .6em;
+                    // padding: -5em;
+                    border: 1px solid black;
+                    border-radius: 10px;
+    
+                    // border-top: 5px solid black;
+                    tr {
+                        // border: 1px solid black;
+    
+                        th {
+                            font-size: 17px;
+                            font-weight: 700;
+                            // margin-top: 1em;
+                            border: 1px solid black;
+                            border-radius: 10px;
+                            padding: .2em;
+    
+    
+                            .t_h {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+    
+                        td {
+                            height: 1vh;
+                            // font-size: 20px;
+                            border: 1px solid rgb(129, 122, 122);
+                            border-radius: 10px;
+    
+                            .s_no {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+                            .subs_date {
+                                margin: 1em;
+                                font-size: 15px;
+                            }
+    
+                            .subs {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 17px;
+                            }
+    
+    
+                            .type {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+    
+                            .conducted {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+    
+                            .present {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+    
+                            .t_h_a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+    
+                            .per {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .footer{
+        // margin-top: -.1em;
+        width: 78vw;
+        margin-left: -.5em;
+        text-align: center;
+    }
+}

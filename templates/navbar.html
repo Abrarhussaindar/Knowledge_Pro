@@ -1,0 +1,322 @@
+{% load static %}
+<title>Navbar</title>
+<link rel="stylesheet" href="{% static 'css/nav.css' %}">
+
+<div class="container">
+    <img id="nav_button" class="ham" src="{% static 'images/bars-solid.svg' %}" alt="">
+    <nav class="navigation">
+        <img id="navi-exit" class="navi-menu-exit" src="{% static 'images/close.png' %}" alt="">
+        <img class="logo" src="{% static 'images/PresiLogo.png' %}" alt="">
+
+        <ul class="list">
+            <li><a href="{% url 'attendance' %}"><span><img class="icon" src="{% static 'images/calendar.png' %}"
+                            alt=""></span> <span>Attendance</span></a></li>
+            <li><a href="{% url 'absence details' %}"><span><img class="icon" src="{% static 'images/calendar.png' %}"
+                            alt=""></span><span>Absence Details</span> </a> </li>
+            <li><a href="{% url 'previous attendance' %}"><span><img class="icon"
+                            src="{% static 'images/calendar.png' %}" alt=""></span><span>Previous Attendance</span></a>
+            </li>
+            <li><a href="{% url 'time table' %}"><span><img class="icon"
+                            src="{% static 'images/calendar-with-check-mark.png' %}" alt=""></span><span>Time
+                        Table</span></a></li>
+            <li><a href="{% url 'result' %}"><span><img class="icon" src="{% static 'images/verified.png' %}"
+                            alt=""></span><span>Result</span></a></li>
+            <li><a href="{% url 'previous result' %}"><span><img class="icon" src="{% static 'images/verified.png' %}"
+                            alt=""></span><span>Previous Result</span></a></li>
+            <li><a href="{% url 'view course plan' %}"><span><img class="icon" src="{% static 'images/computer.png' %}"
+                            alt=""></span><span>View Course Plan</span></a></li>
+            <li><a href="{% url 'fee payment' %}"><span><img class="icon" src="{% static 'images/money.png' %}"
+                            alt=""></span><span>Fee Payment</span></a></li>
+            <li><a href="{% url 'fee payment history' %}"><span><img class="icon" src="{% static 'images/fee.png' %}"
+                            alt=""></span><span>Fee Payment History</span></a></li>
+            <li><a href="{% url 'hostel leave entry' %}"><span><img class="icon" src="{% static 'images/exit.png' %}"
+                            alt=""></span><span>Hostel Leave Entry</span></a></li>
+            <li><a href="{% url 'support' %}"><span><img class="icon" src="{% static 'images/customer-support.png' %}"
+                            alt=""></span><span>Support</span></a></li>
+        </ul>
+
+    </nav>
+    <a href="{% url 'home' %}" class="lg">Presidency University</a>
+    <img id='notifi' class="noti" src="{% static 'images/bell-solid.svg' %}" alt="">
+    <nav class="notify">
+        <img id="noti-exit" class="user-menu-exit" src="{% static 'images/close.png' %}" alt="">
+        <div class="no">
+            Notifications
+        </div>
+
+        <hr>
+        <ul>
+            <li><a href="#">noti 1</a></li>
+            <hr>
+            <li><a href="#">noti 2</a></li>
+            <hr>
+            <li><a href="#">noti 3</a></li>
+            <hr>
+            <li><a href="#">noti 4</a></li>
+            <hr>
+            <li><a href="#">noti 5</a></li>
+            <hr>
+            <li><a href="#">noti 6</a></li>
+            <hr>
+            <li><a href="#">noti 7</a></li>
+
+            <!-- <li><a href="#">djsfalksdjf</a></li><hr>
+            <li><a href="#">dfasfsad</a></li><hr>
+            <li><a href="#">adfasdf</a></li><hr>
+            <li><a href="#">afdfasd</a></li><hr>
+            <li><a href="#">adfasdf</a></li>
+
+            <li><a href="#">djsfalksdjf</a></li><hr>
+            <li><a href="#">dfasfsad</a></li><hr>
+            <li><a href="#">adfasdf</a></li><hr>
+            <li><a href="#">afdfasd</a></li><hr>
+            <li><a href="#">adfasdf</a></li> -->
+
+        </ul>
+
+    </nav>
+    <img id="user_btn" class="user" src="{{context1.profile_imgs.image.url}}" alt="">
+
+    <nav class="user_details">
+        <img id="user-exit" class="user-menu-exit" src="{% static 'images/close.png' %}" alt="">
+        <!-- <ul class="stu_details">
+            
+            <li>kdajslkf</li>
+            <li>kdajslkf</li>
+            <li>kdajslkf</li>
+            <li>kdajslkf</li>
+            <li>kdajslkf</li>
+        </ul> -->
+
+        <div class="butt">
+            <a href="{% url 'login' %}"><button class="btn">Log Out</button></a>
+        </div>
+
+        <div class="stu_de">
+            Student Details
+        </div>
+
+        <hr>
+
+        <div class="table_container">
+            <table id="stu_details" class="table">
+                <!-- <tr>
+                <td><h6>Name :-</h6></td>
+                <td>Abrar Hussain Dar</td>
+            </tr>
+            <tr>
+                <td><h6>Roll Number :- </h6></td>
+                <td>20191CSE0760</td>
+            </tr>
+            <tr>
+                <td><h6>UID :- </h6></td>
+                <td>201910102212</td>
+            </tr>
+            <tr>
+                <td><h6>Section :- </h6></td>
+                <td>5_CSE_13_2019</td>
+            </tr>
+            <tr>
+                <td><h6>DOB :- </h6></td>
+                <td>12-01-1998</td>
+            </tr>
+            <tr>
+                <td><h6>Phone :- </h6></td>
+                <td>06006045264</td>
+            </tr> -->
+
+                <tr>
+                    <td>
+                        <div class="r1">
+                            First Name:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.first_name}} 
+                            
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Middle Name:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.middle_name}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Last Name:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.last_name}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Application Number:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.application_number}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Roll Number:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.roll_number}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            UID:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.uid}}
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Year Applied:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.applied_year}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Section:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.section}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Course:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.course}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            DOB:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.dob}}
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Phone Number:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.phone_number}}
+                        </div>
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <td>
+                        <div class="r1">
+                            Admitted Through:-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stu_details">
+                            {{context1.student.admitted_through}}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            </table>
+        </div>
+    </nav>
+</div>
+
+<script>
+
+    const naviBtn = document.getElementById('nav_button')
+    navBtn = document.querySelector('.navigation')
+    navBtnExit = document.getElementById('navi-exit');
+
+    naviBtn.addEventListener('click', () => {
+        navBtn.classList.add('menu-btn');
+    })
+
+    navBtnExit.addEventListener('click', () => {
+        navBtn.classList.remove('menu-btn');
+    })
+
+
+    const userBtn = document.getElementById('user_btn')
+    navUser = document.querySelector('.user_details')
+    userBtnExit = document.getElementById('user-exit');
+
+    userBtn.addEventListener('click', () => {
+        navUser.classList.add('menu-btn');
+    })
+
+    userBtnExit.addEventListener('click', () => {
+        navUser.classList.remove('menu-btn');
+    })
+
+
+    const notiBtn = document.getElementById('notifi')
+    navnoti = document.querySelector('.notify')
+    notiBtnExit = document.getElementById('noti-exit');
+
+    notiBtn.addEventListener('click', () => {
+        navnoti.classList.add('menu-btn');
+    })
+
+    notiBtnExit.addEventListener('click', () => {
+        navnoti.classList.remove('menu-btn');
+    })
+</script>

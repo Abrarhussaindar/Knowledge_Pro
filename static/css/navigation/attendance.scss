@@ -1,0 +1,305 @@
+.main_body{
+    margin: 4.5em 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    // background-color: red;
+    // width: 64vh;
+    // height: 95%;
+    width: 90vw;
+    height: 80vh;
+
+    .lg{
+        margin: .1em;
+        // border: 1px solid black;
+
+        img{
+            margin-top: .2em;
+            // margin-left: 3em;
+            width: 90vw;
+            height: 8vh;
+            border-radius: 10px;
+        }
+    }
+
+    .atten{
+        span{
+            // border: 1px solid black;
+            img{
+                vertical-align: -2px;
+                width: 3vh;
+                height: 3vh;
+            }
+        }
+        margin: 1em 1em;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    .table_container{
+        // border: 1px solid black;
+        border-radius: 10px;
+        margin: .5em;
+        // width: 90vh;
+        height: 75%;
+        padding: .5em;
+        overflow: auto;
+        // display: inline-grid;
+        // grid-template-columns: auto auto;
+        // justify-content: space-between;
+
+
+        table{
+            margin: -.2em;
+            // padding: -5em;
+            border: 1px solid black;
+            border-radius: 10px;
+            // border-top: 5px solid black;
+            tr{
+                // border: 1px solid black;
+
+                th{
+                    font-size: 15px;
+                    font-weight: 700;
+                    // margin-top: 1em;
+                    border: 1px solid black;
+                    padding: .2em;
+                    border-radius: 10px;
+
+
+                    .t_h{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // font-size: 5em;
+                    }
+                }
+                td{
+                    height: 6vh;
+                    // font-size: 20px;
+                    border: 1px solid rgb(129, 122, 122);
+                    border-radius: 10px;
+                    .s_no{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .subs{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                    }
+                    .subs_date{
+                        margin: 1em;
+                        font-size: 13px;
+                    }
+
+                    .type{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .conducted{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .present{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .t_h_a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+
+                    .per{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        // background-color: chartreuse;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: .5em;
+        // margin: 1em;
+        font-size: 15px;
+        text-align: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        font-weight: lighter;
+    
+        span {
+            font-weight: 400;
+            color: #000000;
+        }
+    
+    }
+}
+
+
+// .footer{
+//     // background-color: chartreuse;
+//     border-radius: 10px;
+//     // border: 2px solid black;
+//     margin: -4em 2em;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-weight: lighter;
+
+//     span{
+//         font-weight: 400;
+//         color: #000000;
+//     }
+// }
+
+@media only screen and (min-width: 720px ){
+    .main_body{
+        width: 79vw;
+        height: 90vh;
+        margin: 0 10em;
+        margin-top: 4.3em;
+        .lg{
+            margin: -.1em;
+    
+            img{
+                margin-top: .2em;
+                margin-left: 20em;
+                margin-bottom: .5em;
+                width: 70vh;
+                height: 15vh;
+            }
+        }
+    
+        .atten{
+            span{
+                img{
+                    vertical-align: -2px;
+                    width: 3vh;
+                    height: 3vh;
+                }
+            }
+            margin: .3em 3.3em;
+            font-size: 1em;
+            font-weight: 500;
+        }
+        .table_container{
+            border-radius: 10px;
+            // margin-top: -1em;
+            // margin-left: 2em;
+            height: min-content;
+            padding: .5em;
+            // width: max-content;
+            // border: 2px solid red;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+    
+    
+            table{
+                // margin-left: 2em;
+                margin-top: .2em;
+                border-radius: 10px;
+    
+                tr{
+    
+                    th{
+                        font-size: 18px;
+                        font-weight: 700;
+                        border: 1px solid black;
+                        padding: .2em;
+                        border-radius: 10px;
+    
+    
+                        .t_h{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            // font-size: 5em;
+                        }
+                    }
+                    td{
+                        height: 1vh;
+                        // font-size: 20px;
+                        border: 1px solid rgb(129, 122, 122);
+                        border-radius: 10px;
+                        .s_no{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+                        .subs{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 17px;
+                        }
+                        .subs_date{
+                            margin: 1em;
+                            font-size: 15px;
+                        }
+    
+                        .type{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+    
+                        .conducted{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+    
+                        .present{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+    
+                        .t_h_a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+    
+    
+                        .per{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer{
+            margin-top: 5em;
+            width: 70.5vw;
+            margin-left: 4em;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+{% load static %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    {% block title %}
+    support
+    {% endblock %}
+</title>
+<link rel="stylesheet" href="{% static 'css/navigation/support.css' %}">
+
+{%  include 'navbar.html' %}
+{% block content %}
+<div class="main_body">
+    <div class="lg">
+        <img src="{% static 'images/logo.png' %}" alt="">
+    </div>
+    <hr>
+    <div class="title">
+      <div class="atten">
+        <span><img src="{% static 'images/customer-support.png' %}" alt=""></span> Support
+    </div>
+    <div class="btns">
+  
+        <a href="{% url 'support request form' %}"><button class="cancle">Add Request</button></a>
+      </div>
+    </div>
+
+<hr>
+    
+
+    <div class="note">
+        This forum is for the use of students currently on the rolls of <span>PRESIDENCY UNIVERSITY</span>  only. The students may make support requests on the available student services on Campus. All other support requests may be routed through counsellor/class teacher/HoD.
+    </div>
+
+
+
+    <div class="table">
+        <table>
+          <tr>
+            <th>
+              <div class="t_h">
+                S_No.
+              </div>
+            </th>
+            <th>
+              <div class="t_h">
+                Request Id
+              </div>
+            </th>
+            <th>
+              <div class="t_h">
+                Date Of Submission
+              </div>
+            </th>
+            <th>
+              <div class="t_h">
+                Category Name
+              </div>
+            </th>
+            <th>
+              <div class="t_h">
+                Description
+              </div>
+            </th>
+            <th>
+              <div class="t_h">
+                Status
+              </div>
+            </th>
+      
+      
+          </tr>
+      
+      
+          {% for x in s_r %}
+          <tr>
+            <td>
+              <div class="s_no">
+                {{x.id}}
+              </div>
+            </td>
+            <td>
+              <div class="s_no">
+                {{x.request_id}}
+              </div>
+      
+            </td>
+            <td>
+              <div class="s_no">
+                {{x.date_of_submission}}
+              </div>
+            </td>
+            <td>
+              <div class="s_no">
+                {{x.category_name}}
+              </div>
+            </td>
+      
+            <td>
+              <div class="s_no">
+                {{x.description}}
+              </div>
+            </td>
+      
+      
+            <td>
+              <div class="s_no">
+                {{x.status}}
+              </div>
+            </td>
+      
+          </tr>
+          {% endfor %}
+          <!-- <tr>
+            <td>
+              <div class="s_no">
+                Total:
+              </div>
+            </td>
+            <td>
+              <div class="s_no">
+      
+              </div>
+      
+            </td>
+            <td>
+              <div class="s_no">
+                {{total}}
+              </div>
+            </td>
+      
+            <td>
+              <div class="subs_date">
+      
+              </div>
+            </td>
+          </tr>
+      
+       -->
+      
+        </table>
+    </div>
+</div>
+<div class="footer">
+  &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+</div>
+{% endblock %}

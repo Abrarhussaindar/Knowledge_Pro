@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Home Page
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    
+
+    <!-- <link rel="stylesheet" href="{% static 'css/home.css' %}"> -->
+</head>
+{% load static %}
+{%  include 'navbar.html' %}
+<body>
+    
+    {% block content %}
+    
+    <div class="main">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+        </div>
+        <hr>
+        <div class="profile">
+            
+            <div class="img">
+                <img src="{{context1.profile_imgs.image.url}}" alt="">
+            </div>
+            <div class="details">
+                <!-- Name:- Abrar Hussain Dar
+                Roll Number:- 20191CSE0760
+                UID:- 201910102212
+                Section:- 5_CSE_13_2019
+                DOB:- 12-01-1998
+                Phone:- 06006045264 -->
+                <table class="table">
+                    <tr>
+                        <td>
+                            <h6>
+                                <section><img src="{% static 'images/user.png' %}" alt="">Name :- </section>
+                            </h6>
+                        </td>
+                        <td>
+                            <div class="stu_details">
+                                {{context1.student.first_name}} {{context1.student.middle_name}} {{context1.student.last_name}}
+                            </div> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6>
+                                <section><img src="{% static 'images/user.png' %}" alt="">Roll Number :-</section>
+                            </h6>
+                        </td>
+                        <td>
+                            <div class="stu_details">
+                                {{context1.student.roll_number}}
+                            </div> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6>
+                                <section><img src="{% static 'images/user.png' %}" alt="">UID :- </section>
+                            </h6>
+                        </td>
+                        <td>
+                            <div class="stu_details">
+                                {{context1.student.uid}}
+                            </div> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6>
+                                <section><img src="{% static 'images/class (1).png' %}" alt="">Section :- </section>
+                            </h6>
+                        </td>
+                        <td>
+                            <div class="stu_details">
+                                {{context1.student.section}}
+                            </div> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6>
+                                <section><img src="{% static 'images/birthday-cake.png' %}" alt="">DOB :- </section>
+                            </h6>
+                        </td>
+                        <td>
+                            <div class="stu_details">
+                                {{context1.student.dob}}
+                            </div> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6>
+                                <section><img src="{% static 'images/smartphone.png' %}" alt="">Phone :- </section>
+                            </h6>
+                        </td>
+                        <td>
+                            <div class="stu_details">
+                                {{context1.student.phone_number}}
+                            </div> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div class="attendance_details">
+            <span><img class="chart" src="{% static 'images/music-bars.png' %}" alt=""></span> Attendance Statistics
+            <hr>
+
+            <img class="grah" src="{% static 'images/bar-graph.png' %}" alt="">
+        </div>
+
+        <div class="footer">
+            &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+        </div>
+    </div>
+
+    
+    {% endblock %}
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.title {
+  margin: .1em 1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.title span img {
+  vertical-align: -2px;
+  width: 3vh;
+  height: 3vh;
+}
+
+.body_container {
+  margin: 5em 1.3em;
+  width: 70vw;
+  height: 95vh;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+
+.body_container .content {
+  margin-top: 1em;
+  border: 2px solid black;
+  width: 60vw;
+  height: 70vh;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.body_container .content form .user-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body_container form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.body_container form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.body_container .user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.body_container .user-details .input-box input:focus,
+.body_container .user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+.body_container form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.body_container form .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body_container form .category label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.body_container form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.body_container #dot-1:checked ~ .category label .one,
+.body_container #dot-2:checked ~ .category label .two,
+.body_container #dot-3:checked ~ .category label .three {
+  background: #9b59b6;
+  border-color: #d9d9d9;
+}
+
+.body_container form input[type="radio"] {
+  display: none;
+}
+
+.body_container form .button {
+  margin-top: 20em;
+  height: 45px;
+}
+
+.body_container form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: -3em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.body_container form .button input:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+@media (max-width: 584px) {
+  .body_container .container {
+    max-width: 100%;
+  }
+  .body_container form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .body_container form .category {
+    width: 100%;
+  }
+  .body_container .content form .user-details {
+    max-height: 300px;
+  }
+  .body_container .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media (max-width: 459px) {
+  .body_container .container .content .category {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer {
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: .5em;
+  margin-top: 5em;
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer span {
+  font-weight: 400;
+  color: #000000;
+}
+
+@media only screen and (min-width: 720px) {
+  .body_container {
+    width: 75vw;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: 0 10em;
+    margin-top: 4.3em;
+    border: 2px solid red;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .body_container .title {
+    margin: 0 6em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  .body_container .title span img {
+    vertical-align: -2px;
+    width: 3vh;
+    height: 3vh;
+  }
+  .body_container .content {
+    border: 2px solid black;
+    width: 20vw;
+    border-radius: 10px;
+    padding: 1em;
+    margin-left: 6.8em;
+    margin-bottom: .5em;
+  }
+  .body_container .content form .user-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .body_container form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  .body_container form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .body_container .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .body_container .user-details .input-box input:focus,
+  .body_container .user-details .input-box input:valid {
+    border-color: #9b59b6;
+  }
+  .body_container form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .body_container form .category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .body_container form .category label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .body_container form .category label .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .body_container #dot-1:checked ~ .category label .one,
+  .body_container #dot-2:checked ~ .category label .two,
+  .body_container #dot-3:checked ~ .category label .three {
+    background: #9b59b6;
+    border-color: #d9d9d9;
+  }
+  .body_container form input[type="radio"] {
+    display: none;
+  }
+  .body_container form .button {
+    margin-top: 3em;
+    height: 45px;
+  }
+  .body_container form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  .body_container form .button input:hover {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 584px) {
+  .body_container .container {
+    max-width: 100%;
+  }
+  .body_container form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .body_container form .category {
+    width: 100%;
+  }
+  .body_container .content form .user-details {
+    max-height: 300px;
+  }
+  .body_container .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 459px) {
+  .body_container .container .content .category {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .footer {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=hostel_leave_entry_form.css.map */

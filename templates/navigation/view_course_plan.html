@@ -1,0 +1,101 @@
+{% load static %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    {% block title %}
+    Time Table
+    {% endblock %}
+</title>
+<link rel="stylesheet" href="{% static 'css/navigation/view_course_plan.css' %}">
+
+{% include 'navbar.html' %}
+{% block content %}
+
+<div class="main_body">
+    <div class="lg">
+        <img src="{% static 'images/logo.png' %}" alt="">
+    </div>
+    <hr>
+    <div class="atten">
+        <span><img src="{% static 'images/computer.png' %}" alt=""></span> View Course Plan
+    </div>
+    <div class="table_container">
+        <table>
+            <tr>
+                <th>
+                    <div class="t_h">
+                        S.No
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Couser Name
+                    </div>
+                </th>
+                <th>
+                    <div class="t_h">
+                        Download
+                    </div>
+                </th>
+            </tr>
+
+            {% for sub in subs %}
+            <tr>
+                <td>
+                    <div class="s_no">
+                        {{sub.id}}
+                    </div>
+                </td>
+                <td>
+                    <div class="subs_date">
+                        {{sub.sub_name}}
+                    </div>
+                    <div class="subs_date">
+                        (CSE 212)
+                    </div>
+
+                </td>
+                <td>
+                    <div class="subs_date">
+                    </div>
+                </td>
+
+
+
+            </tr>
+            {% endfor %}
+            
+
+        </table>
+
+
+    </div>
+</div>
+
+<div class="footer">
+    &#169; 2021 <span> Abrar Hussain Dar</span> , All rights reserved.&#128514;
+</div>
+
+{% endblock %}
+<!-- <script>
+function downloadStudentWiseCoursePlanDetails(subjectId){
+    id = subjectId;
+    console.log(id)
+
+	window.open(url,"Print Subject Wise Course Plan","left=20,top=20,width=900,height=900,toolbar=1,resizable=0,scrollbars=1");
+}
+</script> -->
+<!-- 
+    function downloadStudentWiseCoursePlanDetails(subjectId,subjectName){
+	var url = "newCoursePlan.do?method=viewSubjectWiseCoursePlanDetails&subjectId="+subjectId+"&subject="+subjectName; 
+	window.open(url,"Print Subject Wise Course Plan","left=20,top=20,width=900,height=900,toolbar=1,resizable=0,scrollbars=1");
+}
+ -->
+
+
+<!--  -->
+
+<!-- <div >
+    <img src="images/downloadImage.jpg" onclick="downloadStudentWiseCoursePlanDetails('2761','Operating Systems(CSE 210)')">
+</div> -->

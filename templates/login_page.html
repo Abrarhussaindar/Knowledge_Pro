@@ -1,0 +1,50 @@
+{% load static %}
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% block title %} login page {% endblock %}</title>
+<link rel="stylesheet" href="{% static 'css/login_page.css' %}" />
+
+{% block content %}
+<body>
+  <div class="kpro">
+    <img src="{% static 'images/kpro.png' %}" alt="" />
+  </div>
+  
+  <div class="container">
+    <div class="stu">Welcome Student !</div>
+    <div class="logo">
+      <img src="{% static 'images/logo (1).svg' %}" alt="" />
+    </div>
+    <div class="uni">Presidency University, Bengaluru</div>
+  
+    <div class="wrapper">
+      <form method="POST">
+        {% csrf_token %}
+        <div class="field">
+          <input type="text" name="roll_number" required />
+          <label>Roll Number</label>
+        </div>
+        <div class="field">
+          <input type="password" name="Password" required />
+          <label>Password</label>
+        </div>
+        <div class="field">
+          <input type="submit" value="Login" />
+          
+          
+      </div>
+   
+        
+      </form>
+  
+      
+      <div class="footer">
+        &#169; 2021 Abrar Hussain Dar, All rights
+        reserved.&#128514;
+      </div>
+    </div>
+  </div>
+</body>
+
+{% endblock %}

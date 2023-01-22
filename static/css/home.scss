@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root {
+    --bg: #258bf1;
+}
+
+// *{
+//     margin: 0;
+//     padding: 0;
+//     font-family: 'Poppins', sans-serif;
+//     // background-color: red;
+// }
+
+// body{
+//     height: 100vh;
+//     width: 100vw;
+// }
+
+.main {
+
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: .5em;
+    margin-top: 4.3em;
+    height: 92vh;
+    // width: 100vw;
+
+    .logo {
+        img {
+            margin: .5em 1.2em;
+            width: 42vh;
+            border-radius: 10px;
+        }
+    }
+
+    .profile {
+        border-radius: 10px;
+        margin: .5em;
+        height: 25vh;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid black;
+        .img {
+            // background-color: var(--bg);
+            // border: 2px solid black;
+            border-radius: 15px;
+            padding: 5px;
+            // margin: 5px;
+            margin-top: 2em;
+            width: 15vh;
+            height: 15vh;
+            cursor: pointer;
+            // position: absolute;
+
+
+            img {
+                width: 13vh;
+                height: 13vh;
+                border-radius: 50%;
+            }
+        }
+
+        .details {
+            border: 1px solid rgb(104, 102, 102);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+            // margin-right: 10em;
+            top: 1px;
+            height: 20vh;
+            width: 65vw;
+
+            table {
+                td {
+                    font-weight: lighter;
+
+                    .stu_details {
+                        font-size: 10px;
+                        font-weight: 500;
+                    }
+                }
+
+                section {
+                    color: rgb(104, 102, 102);
+                    font-size: 8px;
+                    font-weight: lighter;
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .attendance_details {
+        border: 1px solid rgb(104, 102, 102);
+        border-radius: 10px;
+        margin: .5em;
+        padding: 1em;
+        height: 35vh;
+        font-weight: lighter;
+
+        span {
+            .chart {
+                margin-right: .1em;
+                width: 2vh;
+                height: 2vh;
+            }
+        }
+
+        .grah {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            margin: .5em 5em;
+            width: 25vh;
+            height: 25vh;
+        }
+
+    }
+    .footer {
+        // background-color: chartreuse;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: .5em;
+        margin: 1em;
+        font-size: 15px;
+        text-align: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        font-weight: lighter;
+    
+        span {
+            font-weight: 400;
+            color: #000000;
+        }
+    
+    }
+}
+
+
+
+@media only screen and (min-width: 720px) {
+
+    .main {
+
+        // border-radius: 10px;
+        border: 2px solid black;
+        // background-color: red;
+        margin: 0 10em;
+        margin-top: 4.3em;
+        // height: 85vh;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                // margin: 1em 30em;
+                width: 60vh;
+            }
+        }
+
+        .profile {
+            border-radius: 10px;
+            margin: .5em;
+            height: 25vh;
+
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;    
+            // border: 2px solid black;
+            .img {
+                // background-color: var(--bg);
+                // border: 2px solid black;
+                border-radius: 15px;
+                // padding: 5px;
+                margin: 5px;
+                width: 25vh;
+                height: 25vh;
+                cursor: pointer;
+                // position: absolute;
+
+
+                img {
+                    width: 22vh;
+                    height: 22vh;
+                    border-radius: 50%;
+                }
+            }
+
+            .details {
+                border: 1px solid rgb(104, 102, 102);
+                border-radius: 10px;
+                padding: 10px;
+                margin: 5px;
+                margin-left: 1em;
+                top: 1px;
+                height: 20vh;
+
+                table {
+                    td {
+                        font-weight: lighter;
+
+                        .stu_details {
+                            font-size: 12.5px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    section {
+                        color: rgb(104, 102, 102);
+                        font-size: 10px;
+                        font-weight: lighter;
+
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .attendance_details {
+            border: 1px solid rgb(104, 102, 102);
+            border-radius: 10px;
+            margin: .5em;
+            padding: 1em;
+            height: 35vh;
+            font-weight: lighter;
+
+            span {
+                .chart {
+                    margin-right: .1em;
+                    width: 2vh;
+                    height: 2vh;
+                }
+            }
+
+            .grah {
+                margin: 1em 5em;
+                width: 30vh;
+                height: 30vh;
+            }
+
+        }
+    }
+}

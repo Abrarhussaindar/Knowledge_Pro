@@ -1,0 +1,1 @@
+web: gunicorn knowledgr_pro.wsgi --log-file -
