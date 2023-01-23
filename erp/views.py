@@ -10,7 +10,7 @@ import json
 def common_code(request):
     if request.user.is_authenticated:
         student = request.user
-        print("student",student)
+        # print("student",student)
         profile_imgs = Profile_pic.objects.filter(stu=student)
         if profile_imgs == {}:
             profile_imgs = ' '
@@ -31,9 +31,9 @@ def login_page(request):
     if request.method == 'POST':
         roll_number = request.POST.get('roll_number')
         password = request.POST.get('Password')
-        print(roll_number, password)
+        # print(roll_number, password)
         student = authenticate(request, roll_number=roll_number, password=password)
-        print(student.is_authenticated)
+        # print(student.is_authenticated)
         if student is not None:
             login(request, student)
             return redirect('home')
@@ -44,11 +44,11 @@ def create_new_customer(request):
     form = CreateStudent()
     if request.method  == 'POST':
         form = CreateStudent(request.POST)
-        print(form.is_valid())
+        # print(form.is_valid())
         # print(form.cleaned_data.get('email'))
         if form.is_valid():
             form.save()
-            print(form.cleaned_data.get('email'))
+            # print(form.cleaned_data.get('email'))
             return redirect('login')
     context = {'form': form}
     return render(request, 'cna.html', context)
@@ -57,14 +57,14 @@ def attendance(request):
     context1 = common_code(request)
 
     sub = Subject.objects.all()
-    print(sub)
+    # print(sub)
     atten = Student_Attendance.objects.all()
     # print(atten[0].present)
 
     total_conducted = 0
     for i in range(0,1):
         total_conducted += sub[i].conducted
-    print(total_conducted)
+    # print(total_conducted)
 
     total_present = 0
     for i in range(0,1):
@@ -99,15 +99,15 @@ def absence_details(request):
     student = request.user
     subs = Subject.objects.all()
     absen_details = Student_Absence_Details.objects.filter(stu=student)
-    print(absen_details)
+    # print(absen_details)
 
     n_o_p_a = Number_of_periods_absent.objects.filter(stu=student)
-    print(n_o_p_a)
+    # print(n_o_p_a)
 
     total_periods = 0
     for i in range(0,len(n_o_p_a)):
         total_periods += n_o_p_a[i].number_of_periods_absent
-    print(int(total_periods))
+    # print(int(total_periods))
 
     context = {
         'subs': subs,
@@ -182,9 +182,9 @@ def fee_payment(request):
     context1 = common_code(request)
     student = request.user
     stu = Student.objects.filter(roll_number=student)
-    print("stu",stu)
+    # print("stu",stu)
     fees = Fee_details.objects.filter(stu=student)
-    print(fees)
+    # print(fees)
     context = {
         'stu': stu,
         'fees': fees,
@@ -196,14 +196,14 @@ def fee_payment_history(request):
     context1 = common_code(request)
     student = request.user
     stu = Student.objects.filter(roll_number=student)
-    print("stu",stu)
+    # print("stu",stu)
     fees = Fee_Payment_History.objects.filter(stu=student)
-    print(fees)
+    # print(fees)
 
     total = 0
     for i in range(0,len(fees)):
         total += fees[i].amount
-    print(int(total))
+    # print(int(total))
     context = {
         'stu': stu,
         'fees': fees,
@@ -242,7 +242,7 @@ def hostel_leave_entry(request):
     context1 = common_code(request)
     student = request.user
     form = Hostel_Leave_Entry.objects.filter(roll_number=student)
-    print(form)
+    # print(form)
     context = {
         'form': form,
         'context1': context1,
@@ -252,9 +252,9 @@ def hostel_leave_entry(request):
 def support(request):
     context1 = common_code(request)
     student = request.user
-    print("roll_num",student)
+    # print("roll_num",student)
     s_r = Support_Request_form.objects.filter(roll_number=student)
-    print(s_r)
+    # print(s_r)
     context = {
         's_r': s_r,
         'context1': context1,
