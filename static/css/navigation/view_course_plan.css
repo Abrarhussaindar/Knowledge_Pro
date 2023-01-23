@@ -1,181 +1,109 @@
 .main_body {
-  margin: 4em .5em;
+  margin: 4em 0.5em;
   border: 2px solid black;
   border-radius: 10px;
   width: 64vh;
   height: 95%;
 }
-
 .main_body .lg {
-  margin: .1em;
+  margin: 0.1em;
 }
-
 .main_body .lg img {
-  margin-top: .2em;
+  margin-top: 0.2em;
   margin-left: 3em;
   width: 50vh;
   height: 10vh;
 }
-
 .main_body .atten {
   margin: 1em 1em;
   font-size: 1.1em;
   font-weight: 500;
 }
-
 .main_body .atten span img {
   vertical-align: -2px;
   width: 3vh;
   height: 3vh;
 }
-
 .main_body .table_container {
   border: 1px solid black;
   border-radius: 10px;
-  margin: .5em;
+  margin: 0.5em;
   height: 75%;
-  padding: .5em;
+  padding: 0.5em;
   overflow: auto;
 }
-
 .main_body .table_container table {
-  margin: -.2em;
+  margin: -0.2em;
   border: 1px solid black;
   border-radius: 10px;
 }
-
 .main_body .table_container table tr th {
   font-size: 15px;
   font-weight: 700;
   border: 1px solid black;
-  padding: .2em;
+  padding: 0.2em;
   border-radius: 10px;
 }
-
 .main_body .table_container table tr th .t_h {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .main_body .table_container table tr td {
   height: 6vh;
-  border: 1px solid #817a7a;
+  border: 1px solid rgb(129, 122, 122);
   border-radius: 10px;
 }
-
 .main_body .table_container table tr td .s_no {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .main_body .table_container table tr td .subs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 15px;
 }
-
 .main_body .table_container table tr td .subs_date {
   margin: 1em;
   font-size: 13px;
 }
-
 .main_body .table_container table tr td .type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .main_body .table_container table tr td .conducted {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .main_body .table_container table tr td .present {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .main_body .table_container table tr td .t_h_a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .main_body .table_container table tr td .per {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
   border-radius: 10px;
   margin: -4em 2em;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: lighter;
 }
-
 .footer span {
   font-weight: 400;
   color: #000000;
@@ -189,12 +117,12 @@
     margin-top: 4.3em;
   }
   .main_body .lg {
-    margin: -.1em;
+    margin: -0.1em;
   }
   .main_body .lg img {
-    margin-top: .2em;
+    margin-top: 0.2em;
     margin-left: 20em;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     width: 70vh;
     height: 15vh;
   }
@@ -213,7 +141,7 @@
     margin-left: 3em;
     width: 60vh;
     height: 60vh;
-    padding: .5em;
+    padding: 0.5em;
     overflow: auto;
   }
   .footer {
@@ -221,5 +149,4 @@
     width: 70vw;
     margin-left: 15em;
   }
-}
-/*# sourceMappingURL=view_course_plan.css.map */
+}/*# sourceMappingURL=view_course_plan.css.map */

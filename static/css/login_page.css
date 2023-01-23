@@ -6,7 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -15,14 +15,9 @@ body {
   width: 91%;
   height: 100vh;
 }
-
 body .kpro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 2.2em;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -31,11 +26,9 @@ body .kpro {
   height: -moz-max-content;
   height: max-content;
 }
-
 body .kpro img {
   width: 80vw;
 }
-
 body .container {
   border-radius: 15px;
   height: 55vh;
@@ -43,14 +36,12 @@ body .container {
   margin-left: 2.5em;
   background: white;
 }
-
 body .container .logo img {
   border-radius: 5px;
-  margin: .5em 2.5em;
+  margin: 0.5em 2.5em;
   width: 60vw;
   height: 10vh;
 }
-
 body .container .uni {
   margin-top: -1em;
   margin-left: 1em;
@@ -58,11 +49,10 @@ body .container .uni {
   font-weight: 500;
   color: black;
 }
-
 body .container .stu {
   font-size: 1.2em;
-  margin-top: -.01em;
-  margin-left: -.01em;
+  margin-top: -0.01em;
+  margin-left: -0.01em;
   color: black;
   font-size: 20px;
   font-weight: 600;
@@ -72,32 +62,27 @@ body .container .stu {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding: .5em;
+  padding: 0.5em;
   width: 74.5vw;
   border-radius: 12px 12px 0 0;
   background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
-
 body .container .wrapper {
   background: #fff;
   border-radius: 15px;
   height: 35vh;
   width: 80vw;
-  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
-
 body .container .wrapper form {
   padding: 10px 30px 50px 30px;
 }
-
 body .container .wrapper form .field {
   height: 50px;
   width: 100%;
   margin-top: 20px;
   position: relative;
 }
-
 body .container .wrapper form .field input {
   height: 100%;
   width: 100%;
@@ -106,15 +91,12 @@ body .container .wrapper form .field input {
   padding-left: 20px;
   border: 1px solid lightgrey;
   border-radius: 25px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 body .container .wrapper form .field input:focus,
 body .container form .field input:valid {
   border-color: #4158d0;
 }
-
 body .container .wrapper form .field label {
   position: absolute;
   top: 50%;
@@ -123,23 +105,18 @@ body .container .wrapper form .field label {
   font-weight: 400;
   font-size: 17px;
   pointer-events: none;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: all 0.3s ease;
+  transform: translateY(-50%);
   transition: all 0.3s ease;
 }
-
 body .container form .field input:focus ~ label,
 body .container form .field input:valid ~ label {
   top: 0%;
   font-size: 16px;
   color: #4158d0;
   background: #fff;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
-body .container form .field input[type="submit"] {
+body .container form .field input[type=submit] {
   color: #fff;
   border: none;
   padding-left: 0;
@@ -148,42 +125,35 @@ body .container form .field input[type="submit"] {
   font-weight: 500;
   cursor: pointer;
   background: linear-gradient(-135deg, #c850c0, #4158d0);
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
-body .container form .field input[type="submit"]:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+body .container form .field input[type=submit]:active {
+  transform: scale(0.95);
 }
-
 body .container .field a {
   border: 2px solid #c850c0;
   border-radius: 50px;
-  padding: .5em;
+  padding: 0.5em;
   text-decoration: none;
   color: black;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
 }
-
 body .container .field a:hover {
   color: white;
   background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
-
 body .footer {
   border-radius: 10px;
   border: 2px solid black;
-  padding: .4em;
+  padding: 0.4em;
   width: 100%;
   margin-top: 5em;
   text-align: center;
   font-size: 15px;
   font-weight: lighter;
 }
-
 body .footer span {
   font-weight: 400;
   color: #000000;
@@ -197,12 +167,8 @@ body .footer span {
     height: 95vh;
   }
   body .kpro {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   body .kpro img {
     width: 25vw;
@@ -227,5 +193,4 @@ body .footer span {
     color: white;
     border: 2px solid white;
   }
-}
-/*# sourceMappingURL=login_page.css.map */
+}/*# sourceMappingURL=login_page.css.map */

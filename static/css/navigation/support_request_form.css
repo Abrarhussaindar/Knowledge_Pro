@@ -5,30 +5,25 @@
   width: 90vw;
   height: 90vh;
 }
-
 .main_body .lg {
-  margin: .1em;
+  margin: 0.1em;
 }
-
 .main_body .lg img {
-  margin-top: .2em;
+  margin-top: 0.2em;
   width: 90vw;
   height: 8vh;
   border-radius: 10px;
 }
-
 .main_body .atten {
   margin: 1em 1em;
   font-size: 1.1em;
   font-weight: 500;
 }
-
 .main_body .atten span img {
   vertical-align: -2px;
   width: 3vh;
   height: 3vh;
 }
-
 .main_body .category {
   margin: 1em;
   border: 1px solid black;
@@ -36,10 +31,9 @@
   border: 2px solid black;
   background: #e53935;
   color: white;
-  padding: .5em;
+  padding: 0.5em;
   font-size: 13px;
 }
-
 .main_body .body_container {
   margin: 1em 1em;
   width: 63vw;
@@ -49,29 +43,20 @@
   border-radius: 10px;
   border: 1px solid red;
 }
-
 .main_body .body_container .content form .user-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .main_body .body_container form .user-details .input-box {
   margin-bottom: 15px;
-  width: calc(90vw / 2 - 20px);
+  width: calc(45vw - 20px);
 }
-
 .main_body .body_container form .input-box span.details {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
 }
-
 .main_body .body_container .user-details .input-box input {
   height: 45px;
   width: 100%;
@@ -81,41 +66,27 @@
   padding-left: 15px;
   border: 1px solid #ccc;
   border-bottom-width: 2px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .main_body .body_container .user-details .input-box input:focus,
 .main_body .body_container .user-details .input-box input:valid {
   border-color: #9b59b6;
 }
-
 .main_body .body_container form .gender-details .gender-title {
   font-size: 20px;
   font-weight: 500;
 }
-
 .main_body .body_container form .category {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 80%;
   margin: 14px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .main_body .body_container form .category label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
-
 .main_body .body_container form .category label .dot {
   height: 18px;
   width: 18px;
@@ -123,26 +94,21 @@
   margin-right: 10px;
   background: #d9d9d9;
   border: 5px solid transparent;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .main_body .body_container #dot-1:checked ~ .category label .one,
 .main_body .body_container #dot-2:checked ~ .category label .two,
 .main_body .body_container #dot-3:checked ~ .category label .three {
   background: #9b59b6;
   border-color: #d9d9d9;
 }
-
-.main_body .body_container form input[type="radio"] {
+.main_body .body_container form input[type=radio] {
   display: none;
 }
-
 .main_body .body_container form .button {
   margin-top: 5em;
   height: 45px;
 }
-
 .main_body .body_container form .button input {
   height: 100%;
   width: 100%;
@@ -153,17 +119,13 @@
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-
 .main_body .body_container form .button input:hover {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
+  transform: scale(0.99);
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
-
 @media (max-width: 584px) {
   .main_body .body_container .container {
     max-width: 100%;
@@ -182,26 +144,21 @@
     width: 5px;
   }
 }
-
 @media (max-width: 459px) {
   .main_body .body_container .container .content .category {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .footer {
   border-radius: 10px;
   border: 2px solid black;
-  padding: .5em;
+  padding: 0.5em;
   margin: 1em;
   font-size: 15px;
   text-align: center;
   font-weight: lighter;
 }
-
 .footer span {
   font-weight: 400;
   color: #000000;
@@ -217,10 +174,10 @@
     margin-top: 4.3em;
   }
   .main_body .lg {
-    margin: .1em;
+    margin: 0.1em;
   }
   .main_body .lg img {
-    margin-top: .2em;
+    margin-top: 0.2em;
     margin-left: 20em;
     width: 70vh;
     height: 15vh;
@@ -242,7 +199,7 @@
     border: 2px solid black;
     background: #e53935;
     color: white;
-    padding: .5em;
+    padding: 0.5em;
     font-size: 13px;
     width: 50%;
   }
@@ -256,18 +213,13 @@
     border: 1px solid black;
   }
   .main_body .body_container .content form .user-details {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .main_body .body_container form .user-details .input-box {
     margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
+    width: calc(50% - 20px);
   }
   .main_body .body_container form .input-box span.details {
     display: block;
@@ -283,11 +235,10 @@
     padding-left: 15px;
     border: 1px solid #ccc;
     border-bottom-width: 2px;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .main_body .body_container .user-details .input-box input:focus,
-  .main_body .body_container .user-details .input-box input:valid {
+.main_body .body_container .user-details .input-box input:valid {
     border-color: #9b59b6;
   }
   .main_body .body_container form .gender-details .gender-title {
@@ -295,22 +246,14 @@
     font-weight: 500;
   }
   .main_body .body_container form .category {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 80%;
     margin: 14px 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .main_body .body_container form .category label {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     cursor: pointer;
   }
   .main_body .body_container form .category label .dot {
@@ -320,16 +263,15 @@
     margin-right: 10px;
     background: #d9d9d9;
     border: 5px solid transparent;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .main_body .body_container #dot-1:checked ~ .category label .one,
-  .main_body .body_container #dot-2:checked ~ .category label .two,
-  .main_body .body_container #dot-3:checked ~ .category label .three {
+.main_body .body_container #dot-2:checked ~ .category label .two,
+.main_body .body_container #dot-3:checked ~ .category label .three {
     background: #9b59b6;
     border-color: #d9d9d9;
   }
-  .main_body .body_container form input[type="radio"] {
+  .main_body .body_container form input[type=radio] {
     display: none;
   }
   .main_body .body_container form .button {
@@ -346,17 +288,14 @@
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
   }
   .main_body .body_container form .button input:hover {
-    -webkit-transform: scale(0.99);
-            transform: scale(0.99);
+    transform: scale(0.99);
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
 }
-
 @media only screen and (min-width: 720px) and (max-width: 584px) {
   .main_body .body_container .container {
     max-width: 100%;
@@ -375,21 +314,15 @@
     width: 5px;
   }
 }
-
 @media only screen and (min-width: 720px) and (max-width: 459px) {
   .main_body .body_container .container .content .category {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media only screen and (min-width: 720px) {
   .footer {
     text-align: center;
     width: 78vw;
     margin-left: 10.5em;
   }
-}
-/*# sourceMappingURL=support_request_form.css.map */
+}/*# sourceMappingURL=support_request_form.css.map */

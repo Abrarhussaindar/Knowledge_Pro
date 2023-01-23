@@ -6,7 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -20,31 +20,24 @@ ul {
   position: fixed;
   top: 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: space-between;
   margin: 2px 7px;
   width: 97vw;
   border-radius: 10px;
 }
-
 .container .navigation {
   display: none;
 }
-
 .container .notify {
   display: none;
 }
-
 .container .user_details {
   display: none;
 }
-
 .container nav.menu-btn {
   display: block;
 }
-
 .container .notify {
   position: fixed;
   z-index: 999;
@@ -57,11 +50,9 @@ ul {
   border: 1px solid black;
   border-radius: 10px;
 }
-
 .container .notify .no {
   margin: 1em;
 }
-
 .container .notify .user-menu-exit {
   float: right;
   margin: 1em;
@@ -69,17 +60,14 @@ ul {
   cursor: pointer;
   color: black;
 }
-
 .container .notify ul li a {
   color: black;
   margin: 1em 2em;
   font-weight: 400;
 }
-
 .container .notify ul li a:hover {
   font-weight: bold;
 }
-
 .container .user_details {
   position: fixed;
   z-index: 999;
@@ -91,137 +79,85 @@ ul {
   border: 1px solid black;
   border-radius: 10px;
 }
-
 .container .user_details .user-menu-exit {
   float: left;
   margin: 1em;
   cursor: pointer;
   color: black;
 }
-
 .container .user_details .table_container {
   border: 1px solid black;
   border-radius: 10px;
-  margin: .5em;
+  margin: 0.5em;
   height: 75vh;
-  padding: .5em;
+  padding: 0.5em;
   overflow: auto;
 }
-
 .container .user_details .table_container table {
-  margin: -.2em;
+  margin: -0.2em;
   border: 1px solid black;
   border-radius: 10px;
 }
-
 .container .user_details .table_container table tr th {
   font-size: 15px;
   font-weight: 700;
   border: 1px solid black;
-  padding: .2em;
+  padding: 0.2em;
   border-radius: 10px;
 }
-
 .container .user_details .table_container table tr th .t_h {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .user_details .table_container table tr td {
   height: 6vh;
-  border: 1px solid #817a7a;
+  border: 1px solid rgb(129, 122, 122);
   border-radius: 10px;
 }
-
 .container .user_details .table_container table tr td .r1 {
   font-size: 13px;
   font-weight: lighter;
   margin: 1em;
 }
-
 .container .user_details .table_container table tr td .stu_details {
   font-size: 15px;
   font-weight: 600;
-  margin: .5em;
+  margin: 0.5em;
 }
-
 .container .user_details .table_container table tr td .subs_date {
   margin: 1em;
   font-weight: 500;
 }
-
 .container .user_details .table_container table tr td .type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .user_details .table_container table tr td .conducted {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .user_details .table_container table tr td .present {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .user_details .table_container table tr td .t_h_a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .user_details .table_container table tr td .per {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container .user_details .butt {
   margin-top: -8em;
   margin-left: 16em;
 }
-
 .container .user_details .butt .btn {
   border: none;
   padding: 1em;
@@ -231,16 +167,13 @@ ul {
   color: white;
   cursor: pointer;
 }
-
 .container .user_details .butt .btn:hover {
   background-color: #187fe7;
 }
-
 .container .user_details .stu_de {
   margin: 1em;
   font-weight: 500;
 }
-
 .container .navigation {
   position: fixed;
   z-index: 999;
@@ -252,43 +185,35 @@ ul {
   border: 1px solid black;
   border-radius: 10px;
 }
-
 .container .navigation .navi-menu-exit {
   float: right;
   margin: 1em;
   cursor: pointer;
   color: black;
 }
-
 .container .navigation .logo {
   border: 1px solid black;
   margin-left: 15px;
   width: 40vh;
-  margin-top: -.5em;
+  margin-top: -0.5em;
 }
-
 .container .navigation .list {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: .5em;
+  box-sizing: border-box;
+  margin-top: 0.5em;
   display: block;
   position: relative;
   overflow: hidden;
 }
-
 .container .navigation .list .icon {
   vertical-align: -18px;
 }
-
 .container .navigation .list img {
   width: 3vh;
 }
-
 .container .navigation .list li span {
   margin-left: 1em;
   font-weight: lighter;
 }
-
 .container .navigation .list li span a {
   color: black;
   text-decoration: none;
@@ -296,11 +221,9 @@ ul {
   font-size: 1em;
   text-align: left;
 }
-
 .container .navigation .list li span:hover {
   font-weight: bold;
 }
-
 .container .navigation li a {
   color: black;
   text-decoration: none;
@@ -309,40 +232,33 @@ ul {
   font-weight: lighter;
   text-align: left;
 }
-
 .container .navigation li:hover {
   font-weight: bolder;
 }
-
 .container img {
   width: 24px;
-  margin: .8em;
+  margin: 0.8em;
 }
-
 .container a {
   color: black;
   text-decoration: none;
   display: block;
   color: white;
 }
-
 .container .ham {
   cursor: pointer;
 }
-
 .container .lg {
   color: black;
   font-size: 17px;
-  margin-top: .7em;
+  margin-top: 0.7em;
 }
-
 .container .noti {
   margin-left: 6em;
-  margin-top: .5em;
+  margin-top: 0.5em;
   width: 22px;
   cursor: pointer;
 }
-
 .container .user {
   width: 4vh;
   height: 4vh;
@@ -357,10 +273,8 @@ ul {
     position: fixed;
     top: 0;
     overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    margin: .2em 10em;
+    margin: 0.2em 10em;
     width: 79vw;
     border-radius: 10px;
   }
@@ -428,13 +342,13 @@ ul {
   .container .user_details .table_container {
     border: 1px solid black;
     border-radius: 10px;
-    margin: .5em;
+    margin: 0.5em;
     height: 80vh;
-    padding: .5em;
+    padding: 0.5em;
     overflow: auto;
   }
   .container .user_details .table_container table {
-    margin: -.2em;
+    margin: -0.2em;
     border: 1px solid black;
     border-radius: 10px;
   }
@@ -442,23 +356,17 @@ ul {
     font-size: 15px;
     font-weight: 700;
     border: 1px solid black;
-    padding: .2em;
+    padding: 0.2em;
     border-radius: 10px;
   }
   .container .user_details .table_container table tr th .t_h {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .container .user_details .table_container table tr td {
     height: 6vh;
-    border: 1px solid #817a7a;
+    border: 1px solid rgb(129, 122, 122);
     border-radius: 10px;
   }
   .container .user_details .table_container table tr td .r1 {
@@ -469,66 +377,36 @@ ul {
   .container .user_details .table_container table tr td .stu_details {
     font-size: 15px;
     font-weight: 600;
-    margin: .5em;
+    margin: 0.5em;
   }
   .container .user_details .table_container table tr td .subs_date {
     margin: 1em;
     font-weight: 500;
   }
   .container .user_details .table_container table tr td .type {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .container .user_details .table_container table tr td .conducted {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .container .user_details .table_container table tr td .present {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .container .user_details .table_container table tr td .t_h_a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .container .user_details .table_container table tr td .per {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .container .user_details .butt {
     margin-top: -8em;
@@ -571,12 +449,11 @@ ul {
     border: 1px solid black;
     margin-left: 2px;
     width: 40vh;
-    margin-top: -.5em;
+    margin-top: -0.5em;
   }
   .container .navigation .list {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-top: .5em;
+    box-sizing: border-box;
+    margin-top: 0.5em;
     display: block;
     position: relative;
     overflow: hidden;
@@ -614,7 +491,7 @@ ul {
   }
   .container img {
     width: 24px;
-    margin: .8em;
+    margin: 0.8em;
   }
   .container a {
     color: black;
@@ -631,7 +508,7 @@ ul {
     margin-right: 38em;
   }
   .container .noti {
-    margin-top: .8em;
+    margin-top: 0.8em;
     width: 22px;
     cursor: pointer;
   }
@@ -641,5 +518,4 @@ ul {
     border-radius: 50%;
     cursor: pointer;
   }
-}
-/*# sourceMappingURL=nav.css.map */
+}/*# sourceMappingURL=nav.css.map */

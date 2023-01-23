@@ -9,7 +9,7 @@ from django.db.models.expressions import Value
 # Create your models here.
 
 class MyUserManager(BaseUserManager):
-    def create_user(self, roll_number, email,first_name, middle_name, last_name, phone_number,application_number, uid, section, dob, course, admitted_through, applied_year, address, city, state, country, alternate_address, house_number, pincode, password=None):
+    def create_user(self, roll_number, email,first_name, middle_name, last_name, phone_number, password=None):
 
         user=self.model(
             email=self.normalize_email(email),
@@ -19,21 +19,21 @@ class MyUserManager(BaseUserManager):
             last_name = last_name,
             phone_number = phone_number,
             
-            application_number = application_number,
-            uid = uid,
-            section = section,
-            dob = dob,
-            course = course,
-            admitted_through = admitted_through,
-            applied_year = applied_year,
+            # application_number = application_number,
+            # uid = uid,
+            # section = section,
+            # dob = dob,
+            # course = course,
+            # admitted_through = admitted_through,
+            # applied_year = applied_year,
 
-            address = address,
-            city = city,
-            state = state,
-            country = country,
-            alternate_address = alternate_address,
-            house_number = house_number,
-            picode = pincode,
+            # address = address,
+            # city = city,
+            # state = state,
+            # country = country,
+            # alternate_address = alternate_address,
+            # house_number = house_number,
+            # picode = pincode,
             # password = password,
 #             # alternative_phone_number = alternative_phone_number,
 #             # address = address,
@@ -78,20 +78,20 @@ class Student(AbstractBaseUser):
     phone_number = models.CharField(verbose_name='Phone Number', max_length=10, null=True)
     # alternative_phone_number = models.CharField(verbose_name='alternative_phone_number', max_length=10, null=True)
     roll_number = models.CharField(verbose_name='Roll Number', max_length=20, null=True, unique=True)
-    application_number = models.CharField(verbose_name='Registration Number', max_length=20, null=True, unique=True)
-    uid = models.CharField(verbose_name='UID', max_length=20, null=True)
-    section = models.CharField(verbose_name='Section', max_length=20, null=True)
-    dob = models.DateField(verbose_name='Date Of Birth', max_length=20, null=True)
-    course = models.CharField(verbose_name='Course', max_length=200, null=True)
-    admitted_through = models.CharField(verbose_name='Admitted Through', max_length=200, null=True)
-    applied_year = models.CharField(verbose_name='Applied Year', max_length=20, null=True)
-    address = models.CharField(verbose_name='address', max_length=500, null=True)
-    city = models.CharField(verbose_name='city', max_length=200, null=True)
-    state = models.CharField(verbose_name='state', max_length=200, null=True)
-    country = models.CharField(verbose_name='country', max_length=100, null=True)
-    alternate_address = models.CharField(verbose_name='alternate_address', max_length=500, null=True)
-    house_number = models.CharField(verbose_name='house_number', max_length=5, null=True)
-    pincode = models.CharField(verbose_name='pincode', max_length=10, null=True)
+    # application_number = models.CharField(verbose_name='Registration Number', max_length=20, null=True, unique=True)
+    # uid = models.CharField(verbose_name='UID', max_length=20, null=True)
+    # section = models.CharField(verbose_name='Section', max_length=20, null=True)
+    # dob = models.DateField(verbose_name='Date Of Birth', max_length=20, null=True)
+    # course = models.CharField(verbose_name='Course', max_length=200, null=True)
+    # admitted_through = models.CharField(verbose_name='Admitted Through', max_length=200, null=True)
+    # applied_year = models.CharField(verbose_name='Applied Year', max_length=20, null=True)
+    # address = models.CharField(verbose_name='address', max_length=500, null=True)
+    # city = models.CharField(verbose_name='city', max_length=200, null=True)
+    # state = models.CharField(verbose_name='state', max_length=200, null=True)
+    # country = models.CharField(verbose_name='country', max_length=100, null=True)
+    # alternate_address = models.CharField(verbose_name='alternate_address', max_length=500, null=True)
+    # house_number = models.CharField(verbose_name='house_number', max_length=5, null=True)
+    # pincode = models.CharField(verbose_name='pincode', max_length=10, null=True)
 
     email = models.EmailField(verbose_name='Email', max_length=60, unique=True)
     is_admin = models.BooleanField(default=False)

@@ -6,30 +6,23 @@
 .main {
   border-radius: 10px;
   border: 2px solid black;
-  margin: .5em;
+  margin: 0.5em;
   margin-top: 4.3em;
   height: 92vh;
 }
-
 .main .logo img {
-  margin: .5em 1.2em;
+  margin: 0.5em 1.2em;
   width: 42vh;
   border-radius: 10px;
 }
-
 .main .profile {
   border-radius: 10px;
-  margin: .5em;
+  margin: 0.5em;
   height: 25vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border: 2px solid black;
 }
-
 .main .profile .img {
   border-radius: 15px;
   padding: 5px;
@@ -38,15 +31,13 @@
   height: 15vh;
   cursor: pointer;
 }
-
 .main .profile .img img {
   width: 13vh;
   height: 13vh;
   border-radius: 50%;
 }
-
 .main .profile .details {
-  border: 1px solid #686666;
+  border: 1px solid rgb(104, 102, 102);
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
@@ -54,58 +45,49 @@
   height: 20vh;
   width: 65vw;
 }
-
 .main .profile .details table td {
   font-weight: lighter;
 }
-
 .main .profile .details table td .stu_details {
   font-size: 10px;
   font-weight: 500;
 }
-
 .main .profile .details table section {
-  color: #686666;
+  color: rgb(104, 102, 102);
   font-size: 8px;
   font-weight: lighter;
 }
-
 .main .profile .details table section img {
   width: 15px;
   height: 15px;
 }
-
 .main .attendance_details {
-  border: 1px solid #686666;
+  border: 1px solid rgb(104, 102, 102);
   border-radius: 10px;
-  margin: .5em;
+  margin: 0.5em;
   padding: 1em;
   height: 35vh;
   font-weight: lighter;
 }
-
 .main .attendance_details span .chart {
-  margin-right: .1em;
+  margin-right: 0.1em;
   width: 2vh;
   height: 2vh;
 }
-
 .main .attendance_details .grah {
-  margin: .5em 5em;
+  margin: 0.5em 5em;
   width: 25vh;
   height: 25vh;
 }
-
 .main .footer {
   border-radius: 10px;
   border: 2px solid black;
-  padding: .5em;
+  padding: 0.5em;
   margin: 1em;
   font-size: 15px;
   text-align: center;
   font-weight: lighter;
 }
-
 .main .footer span {
   font-weight: 400;
   color: #000000;
@@ -118,22 +100,16 @@
     margin-top: 4.3em;
   }
   .main .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .main .logo img {
     width: 60vh;
   }
   .main .profile {
     border-radius: 10px;
-    margin: .5em;
+    margin: 0.5em;
     height: 25vh;
   }
   .main .profile .img {
@@ -149,7 +125,7 @@
     border-radius: 50%;
   }
   .main .profile .details {
-    border: 1px solid #686666;
+    border: 1px solid rgb(104, 102, 102);
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
@@ -165,7 +141,7 @@
     font-weight: 500;
   }
   .main .profile .details table section {
-    color: #686666;
+    color: rgb(104, 102, 102);
     font-size: 10px;
     font-weight: lighter;
   }
@@ -174,15 +150,15 @@
     height: 15px;
   }
   .main .attendance_details {
-    border: 1px solid #686666;
+    border: 1px solid rgb(104, 102, 102);
     border-radius: 10px;
-    margin: .5em;
+    margin: 0.5em;
     padding: 1em;
     height: 35vh;
     font-weight: lighter;
   }
   .main .attendance_details span .chart {
-    margin-right: .1em;
+    margin-right: 0.1em;
     width: 2vh;
     height: 2vh;
   }
@@ -191,5 +167,4 @@
     width: 30vh;
     height: 30vh;
   }
-}
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */
