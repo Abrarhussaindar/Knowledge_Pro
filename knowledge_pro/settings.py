@@ -25,7 +25,6 @@ SECRET_KEY = 'django-insecure-k07l%97oql5^-k1o*avm7nj^y_7cv(uwbrp3mgb((kvd1l7doj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
 
 ALLOWED_HOSTS = ["*", "https://web-production-08f3.up.railway.app", "https://console.cron-job.org/"]
 # Application definition
