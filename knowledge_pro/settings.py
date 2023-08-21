@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-
+ALLOWED_HOSTS = ["*", "https://digitaldaisy-production.up.railway.app/", "https://console.cron-job.org/"]
 # Application definition
 
 INSTALLED_APPS = [
