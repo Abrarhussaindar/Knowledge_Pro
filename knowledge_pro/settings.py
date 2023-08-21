@@ -51,7 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'knowledge_pro.urls'
-CSRF_TRUSTED_ORIGINS = ["https://web-production-08f3.up.railway.app",]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -70,7 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'knowledge_pro.wsgi.application'
 AUTH_USER_MODEL = 'erp.Student'
-
+CSRF_TRUSTED_ORIGINS = ["https://web-production-08f3.up.railway.app",]
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
