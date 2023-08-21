@@ -51,7 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'knowledge_pro.urls'
-CSRF_TRUSTED_ORIGINS = ['https://knowledgepro-production.up.railway.app',]
+CSRF_TRUSTED_ORIGINS = ['https://web-production-08f3.up.railway.app',]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
